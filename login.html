@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوصية - تسجيل الدخول</title>
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="auth-body">
+    <div class="auth-container">
+        <!-- Header Section -->
+        <div class="auth-header">
+            <img src="assets/img/onboarding_illustration.svg" alt="وصية" class="auth-illustration">
+            <h1 class="brand-name">وصيّة</h1>
+            <p class="verse-text">{وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ}</p>
+            <p class="verse-ref">البقرة 110</p>
+        </div>
+
+        <!-- Step 1: Login Form -->
+        <div class="auth-card active" id="login-step">
+            <h2 class="auth-title">تسجيل الدخول</h2>
+            <p class="auth-subtitle">سنرسل لك رمز تحقق للدخول الآمن</p>
+
+            <form id="loginForm" onsubmit="event.preventDefault(); goToStep('otp-step');">
+                <div class="mb-3">
+                    <label class="form-label">الإسم بالكامل</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" placeholder="أكتب إسمك بالكامل" required>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label">رقم الهاتف</label>
+                    <div class="input-group dir-ltr">
+                        <span class="input-group-text">02 <i class="bi bi-chevron-down ms-1"
+                                style="font-size: 0.8rem;"></i></span>
+                        <input type="tel" class="form-control text-end" placeholder="01149722784" required>
+                    </div>
+                    <div class="form-text text-end mt-2">
+                        رقم الهاتف (الواتس أب ) أساسي لإشعارات الحياة
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">تسجيل الدخول</button>
+
+                <div class="auth-footer mt-3">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <i class="bi bi-check-circle-fill text-danger"></i>
+                        <span>رقم الهاتف المستخدم هو نفس رقم هاتفك للواتس أب</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-check-circle-fill text-primary"></i>
+                        <span>خصوصيتك أولوية لدينا، نستخدم معلوماتك فقط لإعداد وصيتك و تصل إليك عند الحاجة</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Step 2: OTP Verification -->
+        <div class="auth-card" id="otp-step">
+            <div class="phone-icon-wrapper">
+                <i class="bi bi-telephone-fill"></i>
+            </div>
+            <h2 class="auth-title">أدخل رمز التحقق</h2>
+            <p class="auth-subtitle">تم إرسال رمز التحقق إلى <strong>01149722784</strong> يرجى مراجعة الواتس أب لمتابعة
+                عملية تسجيل الدخول.</p>
+
+            <form id="otpForm" onsubmit="event.preventDefault(); goToStep('pin-step');">
+                <div class="otp-container mb-4">
+                    <input type="number" class="otp-input" maxlength="1" required>
+                    <input type="number" class="otp-input" maxlength="1" required>
+                    <input type="number" class="otp-input" maxlength="1" required>
+                    <input type="number" class="otp-input" maxlength="1" required>
+                </div>
+
+                <div class="text-center mb-4">
+                    <a href="#" class="resend-link">ألم تستلم رمز تسجيل الدخول؟ أعد إرساله.</a>
+                </div>
+
+                <button type="submit" class="btn-auth">إرسال</button>
+            </form>
+        </div>
+
+        <!-- Step 3: PIN Creation -->
+        <div class="auth-card" id="pin-step">
+            <div class="phone-icon-wrapper">
+                <i class="bi bi-telephone-fill"></i>
+            </div>
+            <h2 class="auth-title">قم بإنشاء رقم PIN الخاص بك</h2>
+            <p class="auth-subtitle">تم إرسال رمز التحقق إلى <strong>01149722784</strong> يرجى مراجعة الواتس أب لمتابعة
+                عملية تسجيل الدخول.</p>
+
+            <div class="alert alert-warning border-0 bg-transparent p-0 mb-4 text-danger d-flex align-items-center gap-2 justify-content-center"
+                style="font-size: 0.8rem;">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                فقدان رمز PIN الخاص بك يعني فقد جميع بياناتك، ولا يمكن إستعادتها مرة أخري
+            </div>
+
+            <form id="pinForm" onsubmit="event.preventDefault(); window.location.href='index.html';">
+                <div class="mb-3">
+                    <label class="form-label text-center w-100">رقم PIN</label>
+                    <div class="otp-container">
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label text-center w-100">تأكيد رقم PIN</label>
+                    <div class="otp-container">
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                        <input type="number" class="otp-input" maxlength="1" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-auth">إنشاء</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function goToStep(stepId) {
+            document.querySelectorAll('.auth-card').forEach(card => card.classList.remove('active'));
+            document.getElementById(stepId).classList.add('active');
+        }
+
+        // Auto-focus logic for OTP/PIN inputs
+        document.querySelectorAll('.otp-container').forEach(container => {
+            const inputs = container.querySelectorAll('input');
+            inputs.forEach((input, index) => {
+                input.addEventListener('input', (e) => {
+                    if (e.target.value.length === 1) {
+                        if (index < inputs.length - 1) inputs[index + 1].focus();
+                    }
+                });
+                input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Backspace' && !e.target.value) {
+                        if (index > 0) inputs[index - 1].focus();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

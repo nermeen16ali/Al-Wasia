@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوصيّة - النسخة الثانية</title>
+
+    <!-- Google Fonts (Tajawal for Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-decor">
+            <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="30" r="2" fill="white" opacity="0.5" />
+                <circle cx="50" cy="20" r="1.5" fill="white" opacity="0.3" />
+                <circle cx="80" cy="40" r="2.5" fill="white" opacity="0.4" />
+                <circle cx="150" cy="25" r="1.5" fill="white" opacity="0.2" />
+                <circle cx="300" cy="50" r="2" fill="white" opacity="0.3" />
+            </svg>
+        </div>
+        <div class="container">
+            <div class="header-top">
+                <div class="profile-section">
+                    <img src="https://ui-avatars.com/api/?name=عبدالله+محمود&background=0FBC91&color=fff&bold=true"
+                        alt="Profile" class="profile-img">
+                    <span class="profile-name">عبدالله محمود</span>
+                </div>
+                <button class="notification-btn" data-bs-toggle="modal" data-bs-target="#notificationModal">
+                    <i class="bi bi-bell-fill"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Status Card -->
+        <section class="status-card">
+            <h2 class="status-title">حالة أقسام الوصية</h2>
+            <p class="status-desc">لقد أنجزت 4 أقسام من 8 في وصيتك، تابع الأقسام المتبقية إن وجدت.</p>
+
+            <div class="progress-container">
+                <div class="progress-info">مكتمل 3 أقسام من 8</div>
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar-fill" style="width: 37.5%;"></div>
+                </div>
+                <div class="status-icon">
+                    <i class="bi bi-emoji-smile-fill"></i>
+                </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="d-flex justify-content-center gap-2 mt-3">
+                <span class="rounded-circle" style="width: 8px; height: 8px; background: #E5E7EB;"></span>
+                <span class="rounded-circle" style="width: 8px; height: 8px; background: #E5E7EB;"></span>
+                <span class="rounded-circle bg-primary" style="width: 8px; height: 8px;"></span>
+            </div>
+        </section>
+
+        <!-- Action Grid -->
+        <section class="action-grid">
+
+            <!-- Card 1: وصيتي -->
+            <div class="action-card">
+                <span class="card-badge success">تم كتابتها</span>
+                <div class="card-icon">
+                    <i class="bi bi-file-earmark-text"></i>
+                </div>
+                <h3 class="card-title">وصيتي</h3>
+                <p class="card-subtitle">توزيع التركة حسب الشريعة.</p>
+            </div>
+
+            <!-- Card 2: ديوني -->
+            <div class="action-card">
+                <span class="card-badge success">تم كتابتها</span>
+                <div class="card-icon">
+                    <i class="bi bi-cash-stack"></i>
+                </div>
+                <h3 class="card-title">ديوني</h3>
+                <p class="card-subtitle">ديوني، التزاماتي، تبرعاتي، صدقاتي...</p>
+            </div>
+
+            <!-- Card 3: حساباتي -->
+            <div class="action-card">
+                <span class="card-badge success">تم كتابتها</span>
+                <div class="card-icon">
+                    <i class="bi bi-credit-card"></i>
+                </div>
+                <h3 class="card-title">حساباتي</h3>
+                <p class="card-subtitle">كتابة رسائل لأشخاص من إختيارك تصل إليهم عند الحاجة</p>
+            </div>
+
+            <!-- Card 4: أملاكي -->
+            <div class="action-card">
+                <span class="card-badge success">تم كتابتها</span>
+                <div class="card-icon">
+                    <i class="bi bi-house-door"></i>
+                </div>
+                <h3 class="card-title">أملاكي</h3>
+                <p class="card-subtitle">كل ما تملكه من عقارات و ممتلكات...</p>
+            </div>
+
+            <!-- Card 5: رسائلي -->
+            <div class="action-card">
+                <span class="card-badge success">تم كتابتها</span>
+                <div class="card-icon">
+                    <i class="bi bi-envelope-heart"></i>
+                </div>
+                <h3 class="card-title">رسائلي</h3>
+                <p class="card-subtitle">كتابة رسائل لأشخاص من إختيارك تصل إليهم عند الحاجة</p>
+            </div>
+
+        </section>
+
+        <!-- Trustees Section -->
+        <section class="trustees-section">
+            <h2 class="section-title">الأمناء</h2>
+            <div class="trustees-card">
+                <!-- Action Buttons -->
+                <div class="trustee-actions">
+                    <button class="action-btn delete"><i class="bi bi-x"></i></button>
+                    <button class="action-btn edit"><i class="bi bi-pencil-square"></i></button>
+                </div>
+
+                <!-- Trustees List -->
+                <div class="trustees-list">
+                    <!-- Trustee 1 -->
+                    <div class="trustee-item">
+                        <div class="trustee-main">
+                            <div class="trustee-avatar">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                            <div class="trustee-details">
+                                <span class="trustee-name">أحمد محمد طلعت</span>
+                                <span class="trustee-phone">01123456789012</span>
+                            </div>
+                        </div>
+                        <div class="trustee-phone-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                    </div>
+
+                    <!-- Trustee 2 -->
+                    <div class="trustee-item">
+                        <div class="trustee-main">
+                            <div class="trustee-avatar">
+                                <i class="bi bi-person-fill"></i>
+                            </div>
+                            <div class="trustee-details">
+                                <span class="trustee-name">أحمد محمد طلعت</span>
+                                <span class="trustee-phone">01123456789012</span>
+                            </div>
+                        </div>
+                        <div class="trustee-phone-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item">
+            <i class="bi bi-grid"></i>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="bi bi-journal-text"></i>
+        </a>
+        <a href="#" class="nav-item active">
+            <i class="bi bi-house-door-fill"></i>
+        </a>
+    </nav>
+
+    <!-- Notification Modal -->
+    <div class="modal fade bottom-sheet" id="notificationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-handle"></div>
+
+                <!-- Notification List State -->
+                <div id="notificationList">
+                    <h3 class="notification-group-title">Today</h3>
+                    <div class="notification-item">
+                        <div class="notification-icon-wrapper">
+                            <i class="bi bi-percent"></i>
+                        </div>
+                        <div class="notification-content">
+                            Limited Time Offer! <strong>Save 25%</strong> on Your Next Flight Booking. Hurry, Book Now!
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-icon-wrapper">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <div class="notification-content">
+                            Discover <strong>How to Earn Rewards</strong>! Learn More About Our Loyalty Program in Your
+                            Profile.
+                        </div>
+                    </div>
+                    <div class="notification-item">
+                        <div class="notification-icon-wrapper">
+                            <i class="bi bi-airplane"></i>
+                        </div>
+                        <div class="notification-content">
+                            Your Flight Ticket to <strong>Jakarta (CGK)</strong> Has Been Successfully Reserved. Have a
+                            Great Trip!
+                        </div>
+                    </div>
+
+                    <h3 class="notification-group-title">Yesterday</h3>
+                    <div class="notification-item">
+                        <div class="notification-icon-wrapper">
+                            <i class="bi bi-percent"></i>
+                        </div>
+                        <div class="notification-content">
+                            Refer a Friend and Earn! Share Your Code to <strong>Get Discounts</strong> on Your Next
+                            Booking.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Empty State (Hidden by default) -->
+                <div id="notificationEmpty" class="notification-empty d-none">
+                    <img src="https://cdni.iconscout.com/illustration/premium/thumb/no-notification-illustration-download-in-svg-png-gif-file-formats--empty-state-messages-pack-user-interface-illustrations-4911855.png"
+                        alt="No Notifications" class="empty-illustration">
+                    <h3 class="empty-title">لا يوجد إشعارات</h3>
+                    <p class="empty-subtitle">لم تتلق أي إشعارات حتى الآن.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

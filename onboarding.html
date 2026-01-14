@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوصية - الترحيب</title>
+    <!-- Google Fonts: Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background: linear-gradient(180deg, #0FBC91 0%, #FFFFFF 60%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+
+        .onboarding-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .skip-link {
+            align-self: flex-start;
+            color: #1A1D21;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .main-illustration {
+            width: 220px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .brand-name {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #4B3621;
+            margin-bottom: 20px;
+        }
+
+        .onboarding-step {
+            display: none;
+            width: 100%;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .onboarding-step.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .verse-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #4F5E71;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+
+        .verse-ref {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #4F5E71;
+            margin-bottom: 30px;
+        }
+
+        .step-desc {
+            font-size: 0.95rem;
+            color: #64748B;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            padding: 0 10px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .feature-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 15px 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-card i {
+            color: #0FBC91;
+            font-size: 1.2rem;
+        }
+
+        .feature-card span {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #4F5E71;
+        }
+
+        .trustee-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .trustee-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .trustee-card i {
+            color: #0FBC91;
+            font-size: 1.5rem;
+        }
+
+        .trustee-card span {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #4F5E71;
+        }
+
+        .security-note {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #94A3B8;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        .security-note i {
+            color: #94A3B8;
+            font-size: 1rem;
+        }
+
+        .indicator-container {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .indicator {
+            width: 30px;
+            height: 6px;
+            background: #E2E8F0;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .indicator.active {
+            background: #0FBC91;
+        }
+
+        .btn-next {
+            background: #0FBC91;
+            color: #FFFFFF;
+            border: none;
+            width: 100%;
+            padding: 18px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 20px rgba(15, 188, 145, 0.2);
+            margin-top: auto;
+        }
+
+        .btn-next:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="onboarding-container">
+        <a href="index.html" class="skip-link">تخطي</a>
+
+        <img src="assets/img/onboarding_illustration.svg" alt="وصية" class="main-illustration">
+        <h1 class="brand-name">وصيّة</h1>
+
+        <!-- Step 1: Why Trustees? -->
+        <div class="onboarding-step active" id="step1">
+            <h2 class="verse-text">لماذا نحتاج إلي أمينين / وصيين؟</h2>
+            <p class="step-desc">نطلب منك تعيين شخصين موثوقين لضمان تنفيذ وصيتك، ولا تقلق فدورهم التأكيد فقط، ولا يمكنهم
+                الإطلاع علي تفاصيل الأصول.</p>
+
+            <div class="trustee-grid">
+                <div class="trustee-card">
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <span>الوصي الأول</span>
+                </div>
+                <div class="trustee-card">
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <span>الوصي الثاني</span>
+                </div>
+            </div>
+
+            <div class="security-note">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>الوصي مهم لضمان حقوق ورثتك، فأختر من تثق بأمانته وحكمته.</span>
+            </div>
+        </div>
+
+        <!-- Step 2: Data Protection -->
+        <div class="onboarding-step" id="step2">
+            <h2 class="verse-text">{إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ... فَحَمَلَهَا
+                الْإِنسَانُ}</h2>
+            <p class="verse-ref">الأحزاب 72</p>
+            <p class="step-desc">نحمي بياناتك كما تحمي عائلتك، نستخدم أحدث تقنيات التشفير لحماية خصوصيتك</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <span>تخزين مشفر</span>
+                </div>
+                <div class="feature-card">
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <span>تحكم كامل</span>
+                </div>
+                <div class="feature-card">
+                    <i class="bi bi-credit-card-2-front"></i>
+                    <span>عرض مشروط</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Platform Purpose -->
+        <div class="onboarding-step" id="step3">
+            <h2 class="verse-text">{كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ}
+            </h2>
+            <p class="verse-ref">البقرة 180</p>
+            <p class="step-desc">منصة رقمية تنظيمية لكتابة إلتزاماتك(ديون و مستحقات )، وصيتك بطريقة آمنة، وموثوقة لتصل
+                إلى أهلك وأقرب الناس إليك في الوقت المناسب.</p>
+        </div>
+
+        <div class="indicator-container">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+
+        <button class="btn-next" id="nextBtn">التالي</button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let currentStep = 1;
+        const totalSteps = 3;
+        const nextBtn = document.getElementById('nextBtn');
+        const indicators = document.querySelectorAll('.indicator');
+        const steps = document.querySelectorAll('.onboarding-step');
+
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < totalSteps) {
+                // Hide current step
+                document.getElementById(`step${currentStep}`).classList.remove('active');
+                indicators[currentStep - 1].classList.remove('active');
+
+                currentStep++;
+
+                // Show next step
+                document.getElementById(`step${currentStep}`).classList.add('active');
+                indicators[currentStep - 1].classList.add('active');
+
+                if (currentStep === totalSteps) {
+                    nextBtn.textContent = 'ابدأ الآن';
+                }
+            } else {
+                // Redirect to home or login
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
+</body>
+
+</html>
