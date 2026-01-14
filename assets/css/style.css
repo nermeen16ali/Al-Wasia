@@ -2,6 +2,8 @@
     /* Color Palette */
     --primary-color: #0FBC91;
     --secondary-color: #ffc107;
+    --text-primary: #101828;
+    --text-secondary: #475467;
     --bg-color: #F5F7FA;
     --text-color: #2D3142;
     --white: #ffffff;
@@ -30,7 +32,14 @@
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-* {
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -85,25 +94,19 @@ body.bg-gredient {
 }
 
 .brand-wasia {
-    font-size: 3rem;
-    font-weight: 900;
-    color: #4B3621;
-    margin-bottom: 30px;
-}
-
-.splash-verse {
-    font-size: 1.2rem;
+    font-size: 28px;
     font-weight: 700;
-    color: #4F5E71;
-    line-height: 1.8;
-    margin-bottom: 10px;
-    max-width: 90%;
+    color: #512402;
+    margin-bottom: 24px;
 }
 
-.splash-ref {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #64748B;
+.blessed-verse {
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.verse-surah {
+    color: var(--text-secondary);
 }
 
 @keyframes fadeIn {
