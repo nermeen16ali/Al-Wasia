@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Al-Wasia-Logo.png">
     <title>الوصية - الترحيب</title>
     <!-- Google Fonts: Tajawal -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,273 +17,81 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        body {
-            background: linear-gradient(180deg, #0FBC91 0%, #FFFFFF 60%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 0;
-        }
-
-        .onboarding-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .skip-link {
-            align-self: flex-start;
-            color: #1A1D21;
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-        }
-
-        .main-illustration {
-            width: 220px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        .brand-name {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #4B3621;
-            margin-bottom: 20px;
-        }
-
-        .onboarding-step {
-            display: none;
-            width: 100%;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        .onboarding-step.active {
-            display: block;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .verse-text {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #4F5E71;
-            line-height: 1.8;
-            margin-bottom: 10px;
-        }
-
-        .verse-ref {
-            font-size: 1rem;
-            font-weight: 800;
-            color: #4F5E71;
-            margin-bottom: 30px;
-        }
-
-        .step-desc {
-            font-size: 0.95rem;
-            color: #64748B;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            padding: 0 10px;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
-            width: 100%;
-            margin-bottom: 30px;
-        }
-
-        .feature-card {
-            background: #FFFFFF;
-            border-radius: 16px;
-            padding: 15px 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .feature-card i {
-            color: #0FBC91;
-            font-size: 1.2rem;
-        }
-
-        .feature-card span {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #4F5E71;
-        }
-
-        .trustee-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            width: 100%;
-            margin-bottom: 20px;
-        }
-
-        .trustee-card {
-            background: #FFFFFF;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .trustee-card i {
-            color: #0FBC91;
-            font-size: 1.5rem;
-        }
-
-        .trustee-card span {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: #4F5E71;
-        }
-
-        .security-note {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            color: #94A3B8;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-
-        .security-note i {
-            color: #94A3B8;
-            font-size: 1rem;
-        }
-
-        .indicator-container {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 40px;
-        }
-
-        .indicator {
-            width: 30px;
-            height: 6px;
-            background: #E2E8F0;
-            border-radius: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .indicator.active {
-            background: #0FBC91;
-        }
-
-        .btn-next {
-            background: #0FBC91;
-            color: #FFFFFF;
-            border: none;
-            width: 100%;
-            padding: 18px;
-            border-radius: 30px;
-            font-weight: 800;
-            font-size: 1.2rem;
-            box-shadow: 0 10px 20px rgba(15, 188, 145, 0.2);
-            margin-top: auto;
-        }
-
-        .btn-next:active {
-            transform: scale(0.98);
-        }
-    </style>
 </head>
 
-<body>
+<body class="bg-gredient">
     <div class="onboarding-container">
-        <a href="index.html" class="skip-link">تخطي</a>
+        <a href="index.html" class="align-self-start mb-3 prim-text">تخطي</a>
 
         <img src="assets/img/onboarding_illustration.svg" alt="وصية" class="main-illustration">
-        <h1 class="brand-name">وصيّة</h1>
+        <h1 class="brand-wasia">وصيّة</h1>
 
-        <!-- Step 1: Why Trustees? -->
+        <!-- Step 1: Platform Purpose -->
         <div class="onboarding-step active" id="step1">
-            <h2 class="verse-text">لماذا نحتاج إلي أمينين / وصيين؟</h2>
-            <p class="step-desc">نطلب منك تعيين شخصين موثوقين لضمان تنفيذ وصيتك، ولا تقلق فدورهم التأكيد فقط، ولا يمكنهم
-                الإطلاع علي تفاصيل الأصول.</p>
-
-            <div class="trustee-grid">
-                <div class="trustee-card">
-                    <i class="bi bi-credit-card-2-front"></i>
-                    <span>الوصي الأول</span>
-                </div>
-                <div class="trustee-card">
-                    <i class="bi bi-credit-card-2-front"></i>
-                    <span>الوصي الثاني</span>
-                </div>
-            </div>
-
-            <div class="security-note">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>الوصي مهم لضمان حقوق ورثتك، فأختر من تثق بأمانته وحكمته.</span>
-            </div>
+            <h2 class="fz-14 grayed-text fw-medium mb-5">{كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ
+                خَيْرًا الْوَصِيَّةُ} <span class="d-block mt-3">البقرة 180</span> </h2>
+            <p class="grayed-text fz-14">منصة رقمية تنظيمية لكتابة إلتزاماتك(ديون و مستحقات ), وصيّتك بطريقة آمنة،
+                وموثوقة
+                لتصل
+                إلى أهلك وأقرب الناس إليك في الوقت المناسب.
+            </p>
         </div>
 
         <!-- Step 2: Data Protection -->
         <div class="onboarding-step" id="step2">
-            <h2 class="verse-text">{إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ وَالْأَرْضِ... فَحَمَلَهَا
-                الْإِنسَانُ}</h2>
-            <p class="verse-ref">الأحزاب 72</p>
-            <p class="step-desc">نحمي بياناتك كما تحمي عائلتك، نستخدم أحدث تقنيات التشفير لحماية خصوصيتك</p>
+            <h2 class="fz-14 grayed-text fw-medium mb-5">{إِنَّا عَرَضْنَا الْأَمَانَةَ عَلَى السَّمَاوَاتِ
+                وَالْأَرْضِ... فَحَمَلَهَا
+                الْإِنسَانُ} <span class="d-block mt-3">الأحزاب 72</span>
+            </h2>
+            <p class="grayed-text fz-14">نحمي بياناتك كما تحمي عائلتك، نستخدم أحدث تقنيات التشفير لحماية خصوصيتك
+            </p>
 
             <div class="feature-grid">
                 <div class="feature-card">
-                    <i class="bi bi-credit-card-2-front"></i>
-                    <span>تخزين مشفر</span>
+                    <img src="assets/img/card-pos.svg" alt="card">
+                    <span class="fw-medium sc-text fz-14">تخزين مشفر</span>
                 </div>
                 <div class="feature-card">
-                    <i class="bi bi-credit-card-2-front"></i>
-                    <span>تحكم كامل</span>
+                    <img src="assets/img/card-pos.svg" alt="card">
+                    <span class="fw-medium sc-text fz-14">تحكم كامل</span>
                 </div>
                 <div class="feature-card">
-                    <i class="bi bi-credit-card-2-front"></i>
-                    <span>عرض مشروط</span>
+                    <img src="assets/img/card-pos.svg" alt="card">
+                    <span class="fw-medium sc-text fz-14">عرض مشروط</span>
                 </div>
             </div>
         </div>
 
-        <!-- Step 3: Platform Purpose -->
+        <!-- Step 3: Why Trustees? -->
         <div class="onboarding-step" id="step3">
-            <h2 class="verse-text">{كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ خَيْرًا الْوَصِيَّةُ}
-            </h2>
-            <p class="verse-ref">البقرة 180</p>
-            <p class="step-desc">منصة رقمية تنظيمية لكتابة إلتزاماتك(ديون و مستحقات )، وصيتك بطريقة آمنة، وموثوقة لتصل
-                إلى أهلك وأقرب الناس إليك في الوقت المناسب.</p>
-        </div>
+            <h2 class="fz-14 grayed-text fw-medium mb-5">لماذا نحتاج إلي أمينين / وصيين؟</h2>
+            <p class="grayed-text">نطلب منك تعيين شخصين موثوقين لضمان تنفيذ وصيتك, ولا تقلق فدورهم التأكيد فقط, ولا
+                يمكنهم الإضطلاع علي تفاصيل الأصول.
+            </p>
 
-        <div class="indicator-container">
+            <div class="feature-grid mb-12">
+                <div class="feature-card">
+                    <img src="assets/img/card-pos.svg" alt="card">
+                    <span class="fw-medium sc-text fz-14">الوصي الأول</span>
+                </div>
+                <div class="feature-card">
+                    <img src="assets/img/card-pos.svg" alt="card">
+                    <span class="fw-medium sc-text fz-14">الوصي الثاني</span>
+                </div>
+            </div>
+
+            <div class="security-note">
+                <img src="assets/img/checked.svg" alt="checked">
+                <span>الوصي مهم لضمان حقوق ورثتك، فأختر من تثق بأمانته وحكمته.</span>
+            </div>
+        </div>
+        <div class="indicator-container d-flex align-items-center gap-1 mt-3 pt-1">
             <div class="indicator active"></div>
             <div class="indicator"></div>
             <div class="indicator"></div>
         </div>
 
-        <button class="btn-next" id="nextBtn">التالي</button>
+        <button class="btn-main mt-36" id="nextBtn">التالي</button>
     </div>
 
     <!-- Bootstrap JS -->
