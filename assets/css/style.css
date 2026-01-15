@@ -78,6 +78,11 @@ body.bg-gredient {
     overflow-x: hidden;
 }
 
+button {
+    background: unset;
+    border: unset;
+}
+
 .brand {
     width: 40px;
     height: 40px;
@@ -118,6 +123,14 @@ body.bg-gredient {
     font-size: 14px;
 }
 
+.fz-13 {
+    font-size: 13px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
 .prim-text {
     color: var(--text-primary);
 }
@@ -128,6 +141,10 @@ body.bg-gredient {
 
 .grayed-text {
     color: var(--text-gray-700);
+}
+
+.colored {
+    color: #0FBC91;
 }
 
 .mt-36 {
@@ -392,11 +409,10 @@ ul {
 
 /* Status Card */
 .status-card {
-    background: var(--white);
-    border-radius: 25px;
+    background: #FEFEFE;
+    border-radius: 8px;
     padding: 12px 16px;
     margin-top: -78px;
-    box-shadow: var(--shadow-md);
     position: relative;
     z-index: 10;
 }
@@ -417,35 +433,43 @@ ul {
 
 .progress-container {
     background: #F9FAFB;
-    border: 1px solid #F3F4F6;
-    border-radius: 20px;
-    padding: 15px 20px;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+    padding: 8px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .progress-bar-wrapper {
-    flex-grow: 1;
-    height: 10px;
-    background: #E5E7EB;
-    border-radius: 5px;
+    height: 4px;
+    background: #E7E7E7;
+    border-radius: 30px;
     overflow: hidden;
 }
 
 .progress-bar-fill {
     height: 100%;
-    background: var(--primary-color);
-    width: 40%;
-    border-radius: 5px;
+    background: #47C28B;
+    border-radius: 30px;
 }
 
-.progress-info {
+.rounded-indicators span {
+    width: 8px;
+    height: 8px;
+    background-color: #D9D9D9;
+}
+
+.rounded-indicators span.active {
+    background-color: #0FBC91;
+}
+
+/* .progress-info {
     font-size: 0.85rem;
     font-weight: 700;
     color: #4B5563;
     white-space: nowrap;
-}
+} */
 
 /* 
 .status-icon {
@@ -464,45 +488,74 @@ ul {
 .action-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 12px;
+    margin-top: 18px;
 }
 
 .action-card {
-    background: var(--white);
-    border-radius: 25px;
-    padding: 25px 20px;
-    box-shadow: var(--shadow-sm);
+    border-radius: 20px;
+}
+
+.action-card.bg-pink {
+    background-color: #FFFAE7;
+}
+
+.action-card.bg-aqua {
+    background-color: #EFFFFB;
+}
+
+.inner-action-card {
+    background-color: #FEFEFE;
     position: relative;
     overflow: hidden;
-    transition: var(--transition-base);
+    border-radius: 30px;
+    padding: 20px 12px;
+    height: 100%;
 }
 
 .action-card:active {
     transform: scale(0.98);
 }
 
-.card-badge {
+.card-decor {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 5px 12px;
-    border-radius: 15px;
-    background: #FFF5F5;
-    color: #FF4D4D;
+    bottom: 0;
+    left: 0;
+}
+
+.card-badge {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 9999px;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
+}
+
+.card-badge.red {
+    background: #FFF5F5;
+    color: #912018;
+}
+
+.card-badge.green {
+    background: #ECFDF3;
+    color: #085D3A;
 }
 
 .card-badge::before {
     content: '';
-    width: 6px;
-    height: 6px;
-    background: #FF4D4D;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
+}
+
+.card-badge.green::before {
+    background: #085D3A;
+}
+
+.card-badge.red::before {
+    background: #912018;
 }
 
 .card-badge.success {
@@ -528,37 +581,39 @@ ul {
 }
 
 .card-title {
-    font-weight: 800;
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    color: #1A1D21;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #000000;
 }
 
 .card-subtitle {
-    font-size: 0.85rem;
-    color: #6B7280;
-    line-height: 1.5;
+    font-size: 13px;
+    color: var(--gray-dark);
+    line-height: 100%;
+    padding-left: 16px;
 }
 
 /* Trustees Section */
 .trustees-section {
-    margin-top: 35px;
+    margin-top: 24px;
     margin-bottom: 20px;
 }
 
 .section-title {
-    font-weight: 800;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #1A1D21;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #101828;
 }
 
 .trustees-card {
-    background: var(--white);
-    border-radius: 25px;
-    padding: 25px;
-    box-shadow: var(--shadow-sm);
-    position: relative;
+    background: #FEFEFE;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .trustees-placeholder-icon {
@@ -566,22 +621,6 @@ ul {
     height: 70px;
     margin: 0 auto 20px;
     opacity: 0.6;
-    text-align: center;
-}
-
-.trustees-link {
-    color: var(--primary-color);
-    font-weight: 800;
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 12px;
-    font-size: 1rem;
-}
-
-.trustees-note {
-    font-size: 0.85rem;
-    color: #6B7280;
-    line-height: 1.6;
     text-align: center;
 }
 
@@ -595,32 +634,13 @@ ul {
 .trustee-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #F3F4F6;
-}
-
-.trustee-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+    gap: 24px;
 }
 
 .trustee-main {
     display: flex;
     align-items: center;
-    gap: 12px;
-}
-
-.trustee-avatar {
-    width: 40px;
-    height: 40px;
-    background: #F9FAFB;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #9CA3AF;
-    font-size: 1.2rem;
+    gap: 6px;
 }
 
 .trustee-details {
@@ -628,51 +648,10 @@ ul {
     flex-direction: column;
 }
 
-.trustee-name {
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: #1A1D21;
-}
-
 .trustee-phone {
     font-size: 0.85rem;
     color: #6B7280;
     direction: ltr;
-}
-
-.trustee-phone-icon {
-    color: #9CA3AF;
-    font-size: 1.1rem;
-}
-
-.trustee-actions {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    gap: 10px;
-}
-
-.action-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    font-size: 1rem;
-    transition: var(--transition-base);
-}
-
-.action-btn.edit {
-    background: #FFF7ED;
-    color: #F97316;
-}
-
-.action-btn.delete {
-    background: #F3F4F6;
-    color: #9CA3AF;
 }
 
 /* Form Styles */

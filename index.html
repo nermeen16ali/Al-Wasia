@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Al-Wasia-Logo.png">
     <title>الوصيّة</title>
 
     <!-- Google Fonts (Tajawal for Arabic) -->
@@ -48,78 +49,93 @@
 
         <!-- Status Card -->
         <section class="status-card">
-            <h2 class="status-title prim-text fz-14 fw-bold">حالة أقسام الوصية</h2>
-            <p class="status-desc">لقد أنجزت 4 أقسام من 8 في وصيتك، تابع الأقسام المتبقية إن وجدت.</p>
+            <h2 class="prim-text fz-14 fw-bold mb-2">حالة أقسام الوصية</h2>
+            <p class="sc-text mb-12 fz-12">لقد أنجزت 4 أقسام من 8 في وصيتك، تابع الأقسام المتبقية إن وجدت.</p>
 
-            <div class="progress-container">
+            <div class="progress-container mb-12">
                 <img src="assets/img/smile-Emoji.svg" alt="Smile Emoji">
                 <div class="flex-grow-1">
-                    <div class="progress-info">مكتمل 3 أقسام من 8</div>
+                    <div class="fz-12 sc-text mb-1">مكتمل 1 أقسام من 5</div>
                     <div class="progress-bar-wrapper">
-                        <div class="progress-bar-fill" style="width: 37.5%;"></div>
+                        <div class="progress-bar-fill" style="width: 20%;"></div>
                     </div>
                 </div>
             </div>
 
             <!-- Carousel Indicators (Visual only) -->
-            <div class="d-flex justify-content-center gap-2 mt-3">
-                <span class="rounded-circle" style="width: 8px; height: 8px; background: #E5E7EB;"></span>
-                <span class="rounded-circle" style="width: 8px; height: 8px; background: #E5E7EB;"></span>
-                <span class="rounded-circle bg-primary" style="width: 8px; height: 8px;"></span>
+            <div class="d-flex justify-content-center gap-2 rounded-indicators">
+                <span class="rounded-circle"></span>
+                <span class="rounded-circle"></span>
+                <span class="rounded-circle active"></span>
             </div>
         </section>
 
         <!-- Action Grid -->
         <section class="action-grid">
 
-            <!-- Card 1: وصيتي -->
-            <div class="action-card">
-                <span class="card-badge">لا يوجد</span>
-                <div class="card-icon">
-                    <i class="bi bi-file-earmark-text"></i>
+            <!-- Card 1: ديوني -->
+            <div class="action-card bg-pink">
+                <div class="inner-action-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img src="assets/img/debt-icon.svg" alt="ديوني">
+                        <span class="card-badge red">لا يوجد</span>
+                    </div>
+                    <h3 class="card-title">ديوني</h3>
+                    <p class="card-subtitle">ديوني, إلتزاماتي, تبرعاتي, صدقاتي...</p>
+                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
                 </div>
-                <h3 class="card-title">وصيتي</h3>
-                <p class="card-subtitle">توزيع التركة حسب الشريعة.</p>
             </div>
 
             <!-- Card 2: ديوني -->
-            <div class="action-card">
-                <span class="card-badge">لا يوجد</span>
-                <div class="card-icon">
-                    <i class="bi bi-cash-stack"></i>
+            <div class="action-card bg-aqua">
+                <div class="inner-action-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img src="assets/img/wasiaty-icon.svg" alt=" وصيّتي">
+                        <span class="card-badge green">تم كتابتها</span>
+                    </div>
+                    <h3 class="card-title"> وصيّتي</h3>
+                    <p class="card-subtitle">توزيع التركة حسب الشريعة.</p>
+                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
                 </div>
-                <h3 class="card-title">ديوني</h3>
-                <p class="card-subtitle">ديوني، التزاماتي، تبرعاتي، صدقاتي...</p>
             </div>
 
-            <!-- Card 3: حساباتي -->
-            <div class="action-card">
-                <span class="card-badge">لا يوجد</span>
-                <div class="card-icon">
-                    <i class="bi bi-credit-card"></i>
+            <!-- Card 3: أملاكي -->
+            <div class="action-card bg-pink">
+                <div class="inner-action-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img src="assets/img/amlaky-icon.svg" alt="أملاكي">
+                        <span class="card-badge red">لا يوجد</span>
+                    </div>
+                    <h3 class="card-title">أملاكي</h3>
+                    <p class="card-subtitle">كل ما تملكه من عقارات و ممتلكات...</p>
+                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
                 </div>
-                <h3 class="card-title">حساباتي</h3>
-                <p class="card-subtitle">حسابات بنكية، معاملات جارية، مستحقاتي...</p>
             </div>
 
-            <!-- Card 4: أملاكي -->
-            <div class="action-card">
-                <span class="card-badge">لا يوجد</span>
-                <div class="card-icon">
-                    <i class="bi bi-house-door"></i>
+            <!-- Card 4: حساباتي -->
+            <div class="action-card bg-aqua">
+                <div class="inner-action-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img src="assets/img/accounts-icon.svg" alt=" حساباتي">
+                        <span class="card-badge red">لا يوجد</span>
+                    </div>
+                    <h3 class="card-title"> حساباتي</h3>
+                    <p class="card-subtitle">حسابات بنكية, معاملات جارية, مستحقاتي...</p>
+                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
                 </div>
-                <h3 class="card-title">أملاكي</h3>
-                <p class="card-subtitle">كل ما تملكه من عقارات و ممتلكات...</p>
             </div>
 
             <!-- Card 5: رسائلي -->
-            <div class="action-card">
-                <span class="card-badge">لا يوجد</span>
-                <div class="card-icon">
-                    <i class="bi bi-envelope-heart"></i>
+            <div class="action-card bg-aqua">
+                <div class="inner-action-card">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img src="assets/img/messages-icon.svg" alt=" رسائلي">
+                        <span class="card-badge red">لا يوجد</span>
+                    </div>
+                    <h3 class="card-title"> رسائلي</h3>
+                    <p class="card-subtitle">كتابة رسائل لأشخاص من إختيارك تصل إليهم عند الحاجة</p>
+                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
                 </div>
-                <h3 class="card-title">رسائلي</h3>
-                <p class="card-subtitle">كتابة رسائل لأشخاص من إختيارك تصل إليهم عند الحاجة</p>
             </div>
 
         </section>
@@ -127,12 +143,46 @@
         <!-- Trustees Section -->
         <section class="trustees-section">
             <h2 class="section-title">الأمناء</h2>
-            <div class="trustees-card">
-                <div class="trustees-placeholder-icon">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Trustees" class="img-fluid">
+            <!-- Trustees Card in case no trustees -->
+            <div class="trustees-card align-items-center">
+                <img src="assets/img/empty-icon.svg" alt="تحديد أمينين فقط">
+                <a href="#" class="colored fz-13 text-decoration-underline">هنا</a>
+                <p class="sc-text fz-13 pt-1">يمكنك تحديد أمينين فقط للإطلاع علي ما تريد عند الحاجة</p>
+            </div>
+            <!-- Trustees Card in case trustees are added -->
+            <div class="trustees-card d-none">
+                <!-- Action Buttons -->
+                <div class="trustee-actions d-flex align-items-center justify-content-end gap-3">
+                    <button><img src="assets/img/edit-icon.svg" alt="edit"></button>
+                    <button><img src="assets/img/close-icon.svg" alt="close"></button>
                 </div>
-                <a href="#" class="trustees-link">هنا</a>
-                <p class="trustees-note">يمكنك تحديد أمينين فقط للإطلاع علي ما تريد عند الحاجة</p>
+
+                <!-- Trustees List -->
+                <div class="trustees-list">
+                    <!-- Trustee 1 -->
+                    <div class="trustee-item">
+                        <div class="trustee-main">
+                            <img src="assets/img/person-icon.svg" alt="أمين">
+                            <span class="fz-12 sc-text fw-medium">أحمد محمد طلعت</span>
+                        </div>
+                        <div class="trustee-main">
+                            <img src="assets/img/phone-icon.svg" alt="الهاتف">
+                            <span class="fz-12 sc-text fw-medium">01123456789012</span>
+                        </div>
+                    </div>
+
+                    <!-- Trustee 2 -->
+                    <div class="trustee-item">
+                        <div class="trustee-main">
+                            <img src="assets/img/person-icon.svg" alt="أمين">
+                            <span class="fz-12 sc-text fw-medium">أحمد محمد طلعت</span>
+                        </div>
+                        <div class="trustee-main">
+                            <img src="assets/img/phone-icon.svg" alt="الهاتف">
+                            <span class="fz-12 sc-text fw-medium">01123456789012</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
