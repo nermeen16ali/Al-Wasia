@@ -323,7 +323,7 @@ ul {
 
 .main-header:not(.bg-header) {
     background-color: #0FBC91;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
 }
 
 .main-header.bg-header {
@@ -331,6 +331,13 @@ ul {
     background-size: cover;
     background-position: center;
     height: 215px;
+}
+
+.log-badge {
+    background-color: #EAECF0;
+    border-radius: 18px;
+    padding: 4px 6px;
+    color: #E34D4D;
 }
 
 .header-top {
@@ -381,7 +388,17 @@ ul {
     background: url(../img/notification-stars.svg) no-repeat center;
     display: flex;
     justify-content: center;
-    padding-top: 3px;
+    align-items: center;
+}
+
+.log-btn {
+    background: linear-gradient(136.58deg, #FF4343 6.77%, #E40000 94.48%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* .notification-btn::after {
