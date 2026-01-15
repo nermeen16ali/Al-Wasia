@@ -282,15 +282,16 @@ button {
 .btn-main {
     background: linear-gradient(180deg, #11D4A4 0%, #11D4A4 28.83%, #11D4A4 100%);
     color: #ffffff;
-    border: none;
     width: 100%;
     padding: 12px;
     border-radius: 100px;
     font-weight: 700;
+    transition: all 0.3s ease;
 }
 
 .btn-main:active {
     transform: scale(0.98);
+    background: #0FBC91;
 }
 
 a {
@@ -362,7 +363,7 @@ ul {
     object-fit: cover;
 }
 
-.profile-name {
+.header-title {
     font-weight: 700;
     font-size: 20px;
     color: #FEFEFE;
@@ -671,33 +672,39 @@ ul {
     direction: ltr;
 }
 
+.note-text {
+    color: #F95555;
+}
+
 /* Form Styles */
-.form-group {
-    margin-bottom: 20px;
+.form-group:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .form-label {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #4F5E71;
-    margin-bottom: 8px;
-    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    line-height: 16px;
+    margin-bottom: 4px;
 }
 
 .form-control {
     background: #FFFFFF;
-    border: 1px solid #E0E6ED;
-    border-radius: 12px;
-    padding: 12px 15px;
-    font-size: 0.95rem;
-    color: #2D3142;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+    padding: 14px 12px;
+    font-size: 14px;
+    height: 44px;
+    color: var(--text-primary);
+    box-shadow: 0px 1px 2px 0px #1018280D;
     transition: var(--transition-base);
     width: 100%;
 }
 
 .form-control:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(15, 188, 145, 0.1);
+    border-color: #0FBC91;
+    box-shadow: 0px 1px 2px 0px #1018280D;
     outline: none;
 }
 
@@ -707,92 +714,50 @@ ul {
 }
 
 /* Trustee Card (Form Version) */
-.trustee-form-card {
-    background: var(--white);
-    border-radius: 25px;
-    padding: 25px;
-    margin-bottom: 20px;
-    box-shadow: var(--shadow-sm);
+.wasia-card {
+    background: #FEFEFE;
+    border-radius: 24px;
 }
 
 .trustee-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    gap: 8px;
+    margin-bottom: 24px;
 }
 
-.trustee-title {
+/* .trustee-title {
     font-weight: 800;
     font-size: 1.1rem;
     color: #1A1D21;
-}
+} */
 
 .trustee-number {
-    width: 35px;
-    height: 35px;
-    background: #E0F7F2;
-    color: #0FBC91;
+    width: 32px;
+    height: 32px;
+    background: #EFFFFB;
+    color: #101828;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 800;
-    font-size: 1rem;
-}
-
-/* Footer Note */
-.footer-note {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 0 10px;
-}
-
-.note-icon {
-    color: #FF4D4D;
-    font-size: 1.2rem;
-    flex-shrink: 0;
-}
-
-.note-text {
-    font-size: 0.8rem;
-    color: #FF4D4D;
-    line-height: 1.6;
-    font-weight: 600;
-}
-
-/* Primary Button Large */
-.btn-primary-lg {
-    background-color: var(--primary-color);
-    color: var(--white);
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    font-weight: 800;
-    font-size: 1.1rem;
-    box-shadow: 0 10px 20px rgba(15, 188, 145, 0.2);
-    transition: var(--transition-base);
-}
-
-.btn-primary-lg:active {
-    transform: scale(0.98);
+    font-weight: 700;
+    font-size: 16px;
 }
 
 /* Back Button */
 .back-btn {
-    width: 40px;
-    height: 40px;
-    background: var(--white);
+    width: 20px;
+    height: 20px;
+    background: #EFFFFB;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
-    border: none;
-    font-size: 1.2rem;
+    color: #344054;
+    line-height: initial;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 /* Intro Text */
@@ -1738,18 +1703,6 @@ ul {
 
 .btn-auth:active {
     transform: scale(0.98);
-}
-
-.form-control {
-    border-radius: 12px;
-    padding: 12px 15px;
-    border: 1px solid #E2E8F0;
-    font-weight: 600;
-}
-
-.form-control:focus {
-    border-color: #0FBC91;
-    box-shadow: 0 0 0 3px rgba(15, 188, 145, 0.1);
 }
 
 .input-group-text {
