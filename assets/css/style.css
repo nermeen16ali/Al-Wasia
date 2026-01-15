@@ -78,6 +78,19 @@ body.bg-gredient {
     overflow-x: hidden;
 }
 
+.brand {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEFEFE;
+}
+
+.brand img {
+    height: 24px;
+}
 
 .splash-content {
     display: flex;
@@ -285,14 +298,22 @@ ul {
 
 /* Header Styles */
 .main-header {
-    background-color: var(--primary-color);
-    color: var(--white);
+    color: #FEFEFE;
     padding-top: 40px;
-    padding-bottom: 80px;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
     position: relative;
     overflow: hidden;
+}
+
+.main-header:not(.bg-header) {
+    background-color: #0FBC91;
+    padding-bottom: 80px;
+}
+
+.main-header.bg-header {
+    background-image: url(../img/header-bg.svg);
+    background-size: cover;
+    background-position: center;
+    height: 215px;
 }
 
 .header-top {
@@ -306,7 +327,7 @@ ul {
 .profile-section {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 4px;
 }
 
 .profile-img {
@@ -319,13 +340,14 @@ ul {
 
 .profile-name {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 20px;
+    color: #FEFEFE;
 }
 
 .notification-btn {
-    width: 45px;
-    height: 45px;
-    background: var(--white);
+    width: 32px;
+    height: 32px;
+    background: #EFFFFB;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -336,7 +358,16 @@ ul {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.notification-btn::after {
+.notifications-box {
+    width: 58px;
+    height: 45px;
+    background: url(../img/notification-stars.svg) no-repeat center;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+/* .notification-btn::after {
     content: '';
     position: absolute;
     top: 12px;
@@ -346,10 +377,10 @@ ul {
     background-color: #ff4d4d;
     border-radius: 50%;
     border: 2px solid var(--white);
-}
+} */
 
 /* Decorative elements in header */
-.header-decor {
+/* .header-decor {
     position: absolute;
     top: 0;
     left: 0;
@@ -357,25 +388,25 @@ ul {
     height: 100%;
     pointer-events: none;
     opacity: 0.1;
-}
+} */
 
 /* Status Card */
 .status-card {
     background: var(--white);
     border-radius: 25px;
-    padding: 25px;
-    margin-top: -50px;
+    padding: 12px 16px;
+    margin-top: -78px;
     box-shadow: var(--shadow-md);
     position: relative;
     z-index: 10;
 }
 
-.status-title {
+/* .status-title {
     font-weight: 800;
     font-size: 1.2rem;
     margin-bottom: 12px;
     color: #1A1D21;
-}
+} */
 
 .status-desc {
     font-size: 0.9rem;
@@ -416,17 +447,18 @@ ul {
     white-space: nowrap;
 }
 
+/* 
 .status-icon {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: #E8F9F5;
     border-radius: 50%;
+    border: 1px solid #FEFEFE;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
-    font-size: 1.5rem;
-}
+} */
 
 /* Action Grid */
 .action-grid {
@@ -1510,15 +1542,13 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--dark-nav);
-    height: 80px;
+    background: var(--text-primary);
+    height: 74px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
     z-index: 1000;
-    padding-bottom: 10px;
+    padding-block: 18px 12px;
 }
 
 .nav-item {
@@ -1540,11 +1570,11 @@ ul {
 
 .nav-item.active::after {
     content: '';
-    width: 5px;
-    height: 5px;
-    background: var(--white);
-    border-radius: 50%;
-    margin-top: 5px;
+    width: 12px;
+    height: 2px;
+    background: #FEFEFE;
+    border-radius: 2px;
+    margin-top: 8px;
 }
 
 /* Utilities */
