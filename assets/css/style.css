@@ -1531,29 +1531,27 @@ ul {
 }
 
 .nav-item {
-    color: rgba(255, 255, 255, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: var(--transition-base);
     width: 60px;
+    position: relative;
 }
 
-.nav-item.active {
-    color: var(--white);
-}
-
-.nav-item i {
-    font-size: 1.6rem;
+.nav-item.active svg path {
+    fill: #FEFEFE;
+    stroke: #101828;
 }
 
 .nav-item.active::after {
     content: '';
+    position: absolute;
+    bottom: -8px;
     width: 12px;
     height: 2px;
     background: #FEFEFE;
     border-radius: 2px;
-    margin-top: 8px;
 }
 
 /* Utilities */
