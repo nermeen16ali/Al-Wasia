@@ -1034,19 +1034,13 @@ ul {
     background-color: var(--primary-color);
 }
 
-.toggle-label {
-    font-size: 0.85rem;
-    color: #6B7280;
-    font-weight: 600;
-}
-
 /* Action Buttons in Cards */
 .card-actions {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 16px;
-    padding: 8px 16px 16px;
+    padding: 8px 16px 0;
 }
 
 /* Security Footer */
