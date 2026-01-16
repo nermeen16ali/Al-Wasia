@@ -6,6 +6,8 @@
     --text-secondary: #475467;
     --text-gray-700: #344054;
     --text-gray-500: #6B7280;
+    --nuetral-dark: #18273B;
+    --neutral-gray: #838A93;
     --bg-color: #F5F7FA;
     --text-color: #2D3142;
     --white: #ffffff;
@@ -1147,78 +1149,47 @@ textarea.form-control {
 /* Confirmation Modal Specifics */
 
 /* Success Modal Specifics */
-.success-illustration-wrapper {
-    width: 140px;
-    height: 140px;
-    background: #0FBC91;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 30px;
-    position: relative;
-    box-shadow: 0 15px 30px rgba(15, 188, 145, 0.3);
-    z-index: 2;
-}
-
-.success-illustration-wrapper i {
-    font-size: 4rem;
-    color: var(--white);
-}
-
 .confetti-bg {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
     width: 100%;
-    height: 100%;
+    /* 
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cpath d='M50 50 Q60 40 70 50' stroke='%230FBC91' stroke-width='4' fill='none' opacity='0.4'/%3E%3Ccircle cx='100' cy='80' r='4' fill='%232D3142' opacity='0.3'/%3E%3Cpath d='M300 100 Q310 90 320 100' stroke='%230FBC91' stroke-width='4' fill='none' opacity='0.4'/%3E%3Ccircle cx='350' cy='50' r='5' fill='%230FBC91' opacity='0.2'/%3E%3Cpath d='M150 200 Q160 190 170 200' stroke='%232D3142' stroke-width='4' fill='none' opacity='0.3'/%3E%3Ccircle cx='50' cy='250' r='3' fill='%230FBC91' opacity='0.4'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     z-index: 1;
-    pointer-events: none;
+    pointer-events: none; */
+}
+
+.congrats {
+    width: 102px;
+    height: 102px;
+    display: block;
+    margin: 98px auto 24px;
 }
 
 .hadith-intro {
-    font-size: 0.9rem;
-    color: #4F5E71;
+    font-size: 20px;
+    color: var(--nuetral-dark);
     text-align: center;
-    margin-bottom: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .hadith-text {
-    font-weight: 800;
-    font-size: 1.4rem;
-    color: #1A1D21;
-    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--nuetral-dark);
     line-height: 1.5;
-    margin-bottom: 15px;
-    padding: 0 10px;
+    margin-bottom: 6px;
 }
 
 .hadith-quote {
     font-size: 1rem;
-    color: #9CA3AF;
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.btn-outline-success-lg {
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
-    background: transparent;
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    font-weight: 800;
-    font-size: 1.1rem;
-    transition: var(--transition-base);
-}
-
-.btn-outline-success-lg:active {
-    transform: scale(0.98);
+    font-weight: 500;
+    color: var(--neutral-gray);
 }
 
 /* Debts Page Specifics */
