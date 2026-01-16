@@ -890,10 +890,7 @@ ul {
     border-radius: 0 0 0 8px;
 }
 
-.bank-card .close-btn {
-    position: absolute;
-    top: -8px;
-    left: 10px;
+.close-btn {
     width: 15px;
     height: 15px;
     background: #8E8E93;
@@ -904,6 +901,12 @@ ul {
     justify-content: center;
     font-size: 10px;
     border: none;
+}
+
+.bank-card .close-btn {
+    position: absolute;
+    top: -8px;
+    left: 10px;
 }
 
 .bank-name {
@@ -924,15 +927,13 @@ ul {
 
 /* Transaction & Dues Cards */
 .list-card {
-    background: var(--white);
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: var(--shadow-sm);
-    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .list-card-header {
+    padding: 16px;
+    background-color: #FFFCF8;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -951,13 +952,13 @@ ul {
     padding: 4px 10px;
     border-radius: 10px;
     color: #6B7280;
-    margin-right: 10px;
 }
 
 .list-card-body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 12px 16px 0;
 }
 
 .data-item {
@@ -1049,8 +1050,8 @@ ul {
 /* Action Buttons in Cards */
 .card-actions {
     display: flex;
-    gap: 10px;
-    margin-top: 15px;
+    justify-content: end;
+    margin-top: 8px;
 }
 
 .btn-outline-primary-sm {
@@ -1073,7 +1074,7 @@ ul {
 }
 
 /* Security Footer */
-.security-footer {
+/* .security-footer {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1087,7 +1088,7 @@ ul {
     justify-content: center;
     gap: 6px;
     font-weight: 600;
-}
+} */
 
 /* Bank Details Modal Specifics */
 

@@ -142,24 +142,22 @@
                 <p class="text-center text-muted small mb-4">معاملات مالية مستمرة مع المعامل والموردين</p>
 
                 <!-- Transaction Card 1 -->
-                <div class="list-card">
+                <div class="list-card bg-white mb-12">
                     <div class="list-card-header">
-                        <button class="close-btn position-static"
-                            style="width: 24px; height: 24px; background: #9CA3AF; color: white; border-radius: 6px; border: none;"><i
-                                class="bi bi-x"></i></button>
                         <div class="d-flex align-items-center">
                             <span class="list-card-type">معمل</span>
                             <h3 class="list-card-title mb-0">ألفا</h3>
                         </div>
+                        <button class="close-btn"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
-                            <span class="data-label">الحالة</span>
-                            <span class="status-badge debtor">مدين</span>
-                        </div>
-                        <div class="data-item text-end">
                             <span class="data-label">الرصيد الحالي</span>
                             <span class="data-value">50.000 جنية</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">الحالة</span>
+                            <span class="status-badge debtor">مدين</span>
                         </div>
                     </div>
                     <div class="card-actions">
@@ -170,24 +168,22 @@
                 </div>
 
                 <!-- Transaction Card 2 -->
-                <div class="list-card">
+                <div class="list-card bg-white mb-12">
                     <div class="list-card-header">
-                        <button class="close-btn position-static"
-                            style="width: 24px; height: 24px; background: #9CA3AF; color: white; border-radius: 6px; border: none;"><i
-                                class="bi bi-x"></i></button>
                         <div class="d-flex align-items-center">
                             <span class="list-card-type">مورد</span>
                             <h3 class="list-card-title mb-0">شركة المتحدة</h3>
                         </div>
+                        <button class="close-btn"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
-                            <span class="data-label">الحالة</span>
-                            <span class="status-badge creditor">دائن</span>
-                        </div>
-                        <div class="data-item text-end">
                             <span class="data-label">الرصيد الحالي</span>
                             <span class="data-value">50.000 جنية</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">الحالة</span>
+                            <span class="status-badge creditor">دائن</span>
                         </div>
                     </div>
                     <div class="card-actions">
@@ -198,24 +194,22 @@
                 </div>
 
                 <!-- Transaction Card 3 -->
-                <div class="list-card">
+                <div class="list-card bg-white mb-12">
                     <div class="list-card-header">
-                        <button class="close-btn position-static"
-                            style="width: 24px; height: 24px; background: #9CA3AF; color: white; border-radius: 6px; border: none;"><i
-                                class="bi bi-x"></i></button>
                         <div class="d-flex align-items-center">
                             <span class="list-card-type">معمل</span>
                             <h3 class="list-card-title mb-0">ألفا</h3>
                         </div>
+                        <button class="close-btn"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
-                            <span class="data-label">الحالة</span>
-                            <span class="status-badge creditor">دائن</span>
-                        </div>
-                        <div class="data-item text-end">
                             <span class="data-label">الرصيد الحالي</span>
                             <span class="data-value">50.000 جنية</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">الحالة</span>
+                            <span class="status-badge creditor">دائن</span>
                         </div>
                     </div>
                     <div class="card-actions">
@@ -225,14 +219,14 @@
                     </div>
                 </div>
 
-                <div class="security-footer">
-                    <p class="security-text">
+                <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3">
+                    <img src="assets/img/red-checked.svg" alt="checked">
+                    <p class="note-text">
                         معلوماتك المصرفية محمية بأعلي معايير الامان
-                        <i class="bi bi-check-circle-fill"></i>
                     </p>
                 </div>
-                <button class="btn-primary-lg mb-4" data-bs-toggle="modal"
-                    data-bs-target="#addTransactionEntityModal">إضافة جهة معاملة</button>
+                <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addTransactionEntityModal">إضافة
+                    جهة معاملة</button>
             </div>
 
             <!-- My Dues Tab -->
@@ -240,34 +234,34 @@
                 <p class="text-center text-muted small mb-4">نشوف تكيست مناسب هنا</p>
 
                 <!-- Dues Card 1 -->
-                <div class="list-card">
+                <div class="list-card bg-white mb-12">
                     <div class="list-card-header align-items-center">
+                        <h3 class="list-card-title mb-0">محمد أحمد مصطفي</h3>
                         <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
                             <input class="form-check-input m-0" type="checkbox" role="switch" id="switch1" checked>
                             <label class="toggle-label" for="switch1">تم سداد المستحق</label>
                         </div>
-                        <h3 class="list-card-title mb-0">محمد أحمد مصطفي</h3>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
-                            <span class="data-label">الحالة</span>
-                            <span class="status-badge due">عليه</span>
-                        </div>
-                        <div class="data-item text-end">
                             <span class="data-label">قيمة المعاملة</span>
                             <span class="data-value">50.000 جنية</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">الحالة</span>
+                            <span class="status-badge due">عليه</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Dues Card 2 -->
-                <div class="list-card">
+                <div class="list-card bg-white mb-12">
                     <div class="list-card-header align-items-center">
+                        <h3 class="list-card-title mb-0">محمود السيد أحمد</h3>
                         <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
                             <input class="form-check-input m-0" type="checkbox" role="switch" id="switch2">
                             <label class="toggle-label" for="switch2">تم سداد المستحق</label>
                         </div>
-                        <h3 class="list-card-title mb-0">محمود السيد أحمد</h3>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
@@ -278,7 +272,7 @@
                             <span class="data-label">تاريخ السداد</span>
                             <span class="data-value">20 أكتوبر 2024</span>
                         </div>
-                        <div class="data-item text-end">
+                        <div class="data-item">
                             <span class="data-label">قيمة المعاملة</span>
                             <span class="data-value">50.000 جنية</span>
                         </div>
@@ -286,22 +280,22 @@
                 </div>
 
                 <!-- Dues Card 3 -->
-                <div class="list-card">
+                <div class="list-card bg-white mb-12">
                     <div class="list-card-header align-items-center">
+                        <h3 class="list-card-title mb-0">عبدالرحمن عبدالله عثمان</h3>
                         <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
                             <input class="form-check-input m-0" type="checkbox" role="switch" id="switch3" checked>
                             <label class="toggle-label" for="switch3">تم سداد المستحق</label>
                         </div>
-                        <h3 class="list-card-title mb-0">عبدالرحمن عبدالله عثمان</h3>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
-                            <span class="data-label">الحالة</span>
-                            <span class="status-badge due">عليه</span>
-                        </div>
-                        <div class="data-item text-end">
                             <span class="data-label">قيمة المعاملة</span>
                             <span class="data-value">50.000 جنية</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-label">الحالة</span>
+                            <span class="status-badge due">عليه</span>
                         </div>
                     </div>
                 </div>
