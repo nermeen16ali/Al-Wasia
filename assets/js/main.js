@@ -19,4 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
             emptyState.classList.add('d-none');
         }
     }
+
+    // Initialize Flatpickr
+    flatpickr(".flatpickr-input", {
+        locale: "ar",
+        dateFormat: "Y-m-d",
+        allowInput: true,
+        disableMobile: "true"
+    });
 });
