@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ديوني - الوصيّة</title>
+    <link rel="shortcut icon" href="assets/img/Al-Wasia-Logo.png">
+    <title>ديوني</title>
 
     <!-- Google Fonts (Tajawal for Arabic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,24 +27,29 @@
 
     <!-- Header -->
     <header class="main-header">
-        <div class="header-decor">
-            <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="30" r="2" fill="white" opacity="0.5" />
-                <circle cx="50" cy="20" r="1.5" fill="white" opacity="0.3" />
-                <circle cx="80" cy="40" r="2.5" fill="white" opacity="0.4" />
-                <circle cx="150" cy="25" r="1.5" fill="white" opacity="0.2" />
-                <circle cx="300" cy="50" r="2" fill="white" opacity="0.3" />
-            </svg>
-        </div>
         <div class="container">
             <div class="header-top">
-                <button class="notification-btn" data-bs-toggle="modal" data-bs-target="#notificationModal">
-                    <i class="bi bi-bell-fill"></i>
-                </button>
-                <h1 class="h5 mb-0 fw-bold">ديوني</h1>
-                <a href="index.html" class="back-btn">
-                    <i class="bi bi-chevron-left"></i>
-                </a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="index.html" class="back-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <h1 class="header-title fw-medium">ديوني</h1>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="log-badge d-flex align-items-center flex-shrink-0 gap-1">
+                        <button class="log-btn open">
+                            <img src="assets/img/open-log.svg" alt="مفتوح">
+                            <img src="assets/img/close-log.svg" class="d-none" alt="مغلق">
+                        </button>
+                        02:00
+                    </div>
+                    <div class="notifications-box">
+                        <button class="notification-btn flex-shrink-0" data-bs-toggle="modal"
+                            data-bs-target="#notificationModal">
+                            <img src="assets/img/notification.svg" class="img-fluid" alt="Notification">
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -54,13 +60,13 @@
         <!-- Tabs -->
         <ul class="nav nav-tabs custom-tabs" id="debtTabs" role="tablist">
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="debts-tab" data-bs-toggle="tab" data-bs-target="#debts-content"
+                    type="button" role="tab" aria-controls="debts-content" aria-selected="false">ديوني</button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="commitments-tab" data-bs-toggle="tab"
                     data-bs-target="#commitments-content" type="button" role="tab" aria-controls="commitments-content"
                     aria-selected="true">إلتزاماتي</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="debts-tab" data-bs-toggle="tab" data-bs-target="#debts-content"
-                    type="button" role="tab" aria-controls="debts-content" aria-selected="false">ديوني</button>
             </li>
         </ul>
 
@@ -69,7 +75,7 @@
             <!-- Commitments Tab -->
             <div class="tab-pane fade show active" id="commitments-content" role="tabpanel"
                 aria-labelledby="commitments-tab">
-                <p class="text-center text-muted small mb-4">الحسابات البنكية والمعلومات المالية</p>
+                <p class="fz-14 grayed-text mb-4">الحسابات البنكية والمعلومات المالية</p>
 
                 <!-- Commitment Card 1 -->
                 <div class="list-card">
