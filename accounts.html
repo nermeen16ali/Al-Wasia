@@ -133,7 +133,8 @@
                     </p>
                 </div>
                 <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addAccountModal">إضافة
-                    حساب</button>
+                    حساب
+                </button>
             </div>
 
             <!-- Current Transactions Tab -->
@@ -490,25 +491,24 @@
                     <form>
                         <!-- Bank Name -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">إسم البنك</label>
-                            <input type="text" class="form-control text-end" placeholder="أكتب إسم البنك...">
+                            <label class="form-label">إسم البنك</label>
+                            <input type="text" class="form-control" placeholder="أكتب إسم البنك...">
                         </div>
 
                         <!-- Account Number -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">رقم الحساب / IBAN</label>
-                            <input type="text" class="form-control text-end" placeholder="رقم الهاتف">
+                            <label class="form-label">رقم الحساب / IBAN</label>
+                            <input type="text" class="form-control" placeholder="رقم الهاتف">
                         </div>
 
                         <!-- Notes -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">ملاحظاتك</label>
-                            <textarea class="form-control text-end" rows="4"
-                                placeholder="أدخل ملاحظاتك هنا..."></textarea>
+                            <label class="form-label">ملاحظاتك</label>
+                            <textarea class="form-control" rows="4" placeholder="أدخل ملاحظاتك هنا..."></textarea>
                         </div>
 
                         <div class="mt-4">
-                            <button type="submit" class="btn-add">أضف</button>
+                            <button type="submit" class="btn-main mb-2">أضف</button>
                             <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                         </div>
                     </form>
@@ -528,14 +528,14 @@
                     <form>
                         <!-- Entity Name -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">إسم الجهة</label>
-                            <input type="text" class="form-control text-end" placeholder="أسم الجهة ...">
+                            <label class="form-label">إسم الجهة</label>
+                            <input type="text" class="form-control" placeholder="أسم الجهة ...">
                         </div>
 
                         <!-- Entity Type -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">نوع الجهة</label>
-                            <select class="form-control text-end form-select-custom">
+                            <label class="form-label">نوع الجهة</label>
+                            <select class="form-control form-select-custom">
                                 <option selected disabled>إختر نوع الجهة...</option>
                                 <option>معمل</option>
                                 <option>مورد</option>
@@ -544,8 +544,8 @@
 
                         <!-- Amount -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">المبلغ</label>
-                            <select class="form-control text-end form-select-custom">
+                            <label class="form-label">المبلغ</label>
+                            <select class="form-control form-select-custom">
                                 <option selected disabled>أدخل المبلغ هنا...</option>
                                 <option>10,000</option>
                                 <option>20,000</option>
@@ -555,22 +555,21 @@
 
                         <!-- Addition Date -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">تاريخ الإضافة</label>
+                            <label class="form-label">تاريخ الإضافة</label>
                             <div class="form-date-wrapper">
-                                <input type="text" class="form-control text-end" placeholder="أدخل المبلغ هنا...">
+                                <input type="text" class="form-control" placeholder="أدخل المبلغ هنا...">
                                 <i class="bi bi-calendar-event"></i>
                             </div>
                         </div>
 
                         <!-- Notes -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">ملاحظاتك</label>
-                            <textarea class="form-control text-end" rows="4"
-                                placeholder="أدخل ملاحظاتك هنا..."></textarea>
+                            <label class="form-label">ملاحظاتك</label>
+                            <textarea class="form-control" rows="4" placeholder="أدخل ملاحظاتك هنا..."></textarea>
                         </div>
 
                         <div class="mt-4">
-                            <button type="button" class="btn-add" data-bs-toggle="modal"
+                            <button type="button" class="btn-main" data-bs-toggle="modal"
                                 data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">أضف</button>
                             <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                         </div>
@@ -591,8 +590,8 @@
                     <form>
                         <!-- Amount -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">المبلغ</label>
-                            <select class="form-control text-end form-select-custom">
+                            <label class="form-label">المبلغ</label>
+                            <select class="form-control form-select-custom">
                                 <option selected disabled>أدخل المبلغ هنا...</option>
                                 <option>10,000</option>
                                 <option>20,000</option>
@@ -602,22 +601,21 @@
 
                         <!-- Transaction Date -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">تاريخ المعاملة</label>
+                            <label class="form-label">تاريخ المعاملة</label>
                             <div class="form-date-wrapper">
-                                <input type="text" class="form-control text-end" placeholder="إختر التاريخ هنا...">
+                                <input type="text" class="form-control" placeholder="إختر التاريخ هنا...">
                                 <i class="bi bi-calendar-event"></i>
                             </div>
                         </div>
 
                         <!-- Notes -->
                         <div class="form-group">
-                            <label class="form-label text-end w-100">ملاحظاتك</label>
-                            <textarea class="form-control text-end" rows="4"
-                                placeholder="أدخل ملاحظاتك هنا..."></textarea>
+                            <label class="form-label">ملاحظاتك</label>
+                            <textarea class="form-control" rows="4" placeholder="أدخل ملاحظاتك هنا..."></textarea>
                         </div>
 
                         <div class="mt-4">
-                            <button type="button" class="btn-add" data-bs-toggle="modal"
+                            <button type="button" class="btn-main" data-bs-toggle="modal"
                                 data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">أضف</button>
                             <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                         </div>
@@ -645,7 +643,7 @@
                     <p class="confirmation-desc">بالضغط علي تأكيد فأنت تصدق علي سداد المبلغ المستحق.</p>
 
                     <div class="mt-4">
-                        <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#successModal"
+                        <button type="button" class="btn-main" data-bs-toggle="modal" data-bs-target="#successModal"
                             data-bs-dismiss="modal">تأكيد</button>
                         <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                     </div>

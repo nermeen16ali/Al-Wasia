@@ -182,13 +182,6 @@ button {
     margin-bottom: 20px;
 }
 
-/* .brand-name {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: #4B3621;
-    margin-bottom: 20px;
-} */
-
 .onboarding-step {
     display: none;
     width: 100%;
@@ -210,29 +203,6 @@ button {
         transform: translateY(0);
     }
 }
-
-/* .verse-text {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #4F5E71;
-    line-height: 1.8;
-    margin-bottom: 10px;
-}
-
-.verse-ref {
-    font-size: 1rem;
-    font-weight: 800;
-    color: #4F5E71;
-    margin-bottom: 30px;
-}
-
-.step-desc {
-    font-size: 0.95rem;
-    color: #64748B;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    padding: 0 10px;
-} */
 
 .feature-grid {
     display: flex;
@@ -405,29 +375,6 @@ ul {
     justify-content: center;
 }
 
-/* .notification-btn::after {
-    content: '';
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 8px;
-    height: 8px;
-    background-color: #ff4d4d;
-    border-radius: 50%;
-    border: 2px solid var(--white);
-} */
-
-/* Decorative elements in header */
-/* .header-decor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    opacity: 0.1;
-} */
-
 /* Status Card */
 .status-card {
     background: #FEFEFE;
@@ -437,13 +384,6 @@ ul {
     position: relative;
     z-index: 10;
 }
-
-/* .status-title {
-    font-weight: 800;
-    font-size: 1.2rem;
-    margin-bottom: 12px;
-    color: #1A1D21;
-} */
 
 .status-desc {
     font-size: 0.9rem;
@@ -484,26 +424,6 @@ ul {
 .rounded-indicators span.active {
     background-color: #0FBC91;
 }
-
-/* .progress-info {
-    font-size: 0.85rem;
-    font-weight: 700;
-    color: #4B5563;
-    white-space: nowrap;
-} */
-
-/* 
-.status-icon {
-    width: 32px;
-    height: 32px;
-    background: #E8F9F5;
-    border-radius: 50%;
-    border: 1px solid #FEFEFE;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-color);
-} */
 
 /* Action Grid */
 .action-grid {
@@ -737,12 +657,6 @@ ul {
     margin-bottom: 24px;
 }
 
-/* .trustee-title {
-    font-weight: 800;
-    font-size: 1.1rem;
-    color: #1A1D21;
-} */
-
 .trustee-number {
     width: 32px;
     height: 32px;
@@ -770,26 +684,6 @@ ul {
     font-size: 10px;
     font-weight: 600;
 }
-
-/* Intro Text */
-/* .intro-text {
-    font-size: 0.9rem;
-    color: #6B7280;
-    text-align: center;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    padding: 0 20px;
-} */
-
-/* Will Card */
-/* 
-.will-title {
-    font-weight: 800;
-    font-size: 1.1rem;
-    color: #1A1D21;
-    margin-bottom: 20px;
-    text-align: center;
-} */
 
 .will-textarea-container {
     border: 1px solid #9DA4AE;
@@ -1223,33 +1117,18 @@ ul {
     transform: scale(0.98);
 }
 
-.btn-add {
-    background-color: var(--primary-color);
-    color: var(--white);
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    font-weight: 800;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
-    transition: var(--transition-base);
-}
-
-.btn-add:active {
-    transform: scale(0.98);
+textarea.form-control {
+    min-height: 99px;
 }
 
 .btn-cancel {
-    background-color: #E5E7EB;
-    color: #4F5E71;
+    background: #78787833;
+    color: #595959;
     width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    font-weight: 800;
-    font-size: 1.1rem;
-    transition: var(--transition-base);
+    padding: 13.5px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .btn-cancel:active {
@@ -1566,30 +1445,6 @@ ul {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2364748B' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: left 15px center;
-}
-
-.btn-add {
-    background: var(--primary-color);
-    color: var(--white);
-    border: none;
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    font-weight: 800;
-    font-size: 1.1rem;
-    transition: var(--transition-base);
-}
-
-.btn-cancel {
-    background: #F1F5F9;
-    color: #64748B;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    border-radius: 25px;
-    font-weight: 800;
-    font-size: 1.1rem;
-    transition: var(--transition-base);
 }
 
 /* Authentication Page Styles */
