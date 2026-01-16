@@ -57,15 +57,20 @@
     <!-- Main Content -->
     <main class="container mt-4">
         <form>
-            <div class="form-group mb-3">
-                <label class="form-label fz-14 fw-bold prim-text">إسم المرسل إليه</label>
-                <input type="text" class="form-control" placeholder="أدخل إسم المرسل إليه">
-            </div>
+            <section class="wasia-card p-3 mb-3">
+                <div class="form-group mb-3">
+                    <label class="form-label fz-14 fw-bold prim-text">إسم المرسل إليه</label>
+                    <input type="text" class="form-control" placeholder="أدخل إسم المرسل إليه">
+                </div>
 
-            <div class="form-group mb-4">
-                <label class="form-label fz-14 fw-bold prim-text">محتوي الرسالة</label>
-                <textarea class="form-control" rows="8" placeholder="أكتب رسالتك هنا..."></textarea>
-            </div>
+                <div class="form-group mb-0">
+                    <label class="form-label fz-14 fw-bold prim-text">محتوي الرسالة</label>
+                    <div class="will-textarea-container">
+                        <textarea class="will-textarea" placeholder="أكتب رسالتك هنا..."
+                            style="height: 300px;"></textarea>
+                    </div>
+                </div>
+            </section>
 
             <div class="d-flex flex-column gap-3">
                 <button type="submit" class="btn-main">حفظ</button>
