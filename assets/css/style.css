@@ -485,6 +485,11 @@ ul {
     color: #912018;
 }
 
+.card-badge.blue {
+    background: #EFF8FF;
+    color: #1849A9;
+}
+
 .card-badge.green {
     background: #ECFDF3;
     color: #085D3A;
@@ -503,6 +508,10 @@ ul {
 
 .card-badge.red::before {
     background: #912018;
+}
+
+.card-badge.blue::before {
+    background: #1849A9;
 }
 
 .card-badge.success {
