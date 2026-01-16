@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/Al-Wasia-Logo.png">
+    <title>كتابة رسالة</title>
+
+    <!-- Google Fonts (Tajawal for Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="d-flex align-items-center gap-2">
+                    <a href="messages.html" class="back-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <h1 class="header-title fw-medium">كتابة رسالة</h1>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="log-badge d-flex align-items-center flex-shrink-0 gap-1">
+                        <button class="log-btn open">
+                            <img src="assets/img/open-log.svg" alt="مفتوح">
+                            <img src="assets/img/close-log.svg" class="d-none" alt="مغلق">
+                        </button>
+                        02:00
+                    </div>
+                    <div class="notifications-box">
+                        <button class="notification-btn flex-shrink-0" data-bs-toggle="modal"
+                            data-bs-target="#notificationModal">
+                            <img src="assets/img/notification.svg" class="img-fluid" alt="Notification">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <form>
+            <div class="form-group mb-3">
+                <label class="form-label fz-14 fw-bold prim-text">إسم المرسل إليه</label>
+                <input type="text" class="form-control" placeholder="أدخل إسم المرسل إليه">
+            </div>
+
+            <div class="form-group mb-4">
+                <label class="form-label fz-14 fw-bold prim-text">محتوي الرسالة</label>
+                <textarea class="form-control" rows="8" placeholder="أكتب رسالتك هنا..."></textarea>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+                <button type="submit" class="btn-main">حفظ</button>
+                <button type="button" class="btn-outline-primary w-100 py-3">حفظ كمسودة</button>
+                <a href="messages.html" class="btn-cancel text-center text-decoration-none">إلغاء</a>
+            </div>
+        </form>
+
+        <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3 mt-5">
+            <img src="assets/img/red-checked.svg" alt="checked">
+            <p class="note-text">
+                معلوماتك المصرفية محمية بأعلي معايير الامان
+            </p>
+        </div>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
