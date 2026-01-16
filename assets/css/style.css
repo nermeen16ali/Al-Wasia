@@ -631,9 +631,8 @@ ul {
     background: #FFFFFF;
     border: 1px solid #EAECF0;
     border-radius: 8px;
-    padding: 14px 12px;
+    /* padding: 14px 12px; */
     font-size: 14px;
-    font-weight: 700;
     color: var(--text-gray-700);
     letter-spacing: -0.2px;
     height: 44px;
@@ -645,6 +644,7 @@ ul {
 .form-control:disabled {
     background: #FFFFFF;
     border: 0;
+    font-weight: 700;
     box-shadow: none;
 }
 
@@ -861,8 +861,9 @@ ul {
 }
 
 .custom-tabs .nav-link.active {
-    color: #1A1D21;
+    color: var(--text-primary);
     background: none;
+    font-weight: 700;
     position: relative;
 }
 
@@ -1118,13 +1119,13 @@ textarea.form-control {
 }
 
 /* Custom Form Elements for Modals */
-.form-select-custom {
+/* .form-select-custom {
     appearance: none;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%230FBC91' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: left 1rem center;
     background-size: 16px 12px;
-}
+} */
 
 .form-date-wrapper {
     position: relative;
@@ -1132,15 +1133,15 @@ textarea.form-control {
 
 .form-date-wrapper i {
     position: absolute;
-    right: 15px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--primary-color);
+    color: #0FBC91;
     pointer-events: none;
 }
 
 .form-date-wrapper .form-control {
-    padding-right: 45px;
+    padding-left: 45px;
 }
 
 /* Confirmation Modal Specifics */
@@ -1399,15 +1400,6 @@ textarea.form-control {
 
 .form-date-wrapper {
     position: relative;
-}
-
-.form-date-wrapper i {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #64748B;
-    font-size: 1.1rem;
 }
 
 .form-select-custom {

@@ -307,7 +307,8 @@
                         معلوماتك المصرفية محمية بأعلي معايير الامان
                     </p>
                 </div>
-                <button class="btn-main mt-3">إضافة مستحق</button>
+                <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addTransactionEntityModal">إضافة
+                    مستحق</button>
             </div>
 
         </div>
@@ -445,7 +446,7 @@
 
                 <!-- Customer Name -->
                 <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-bank detail-icon"></i>
+                    <i class="bi bi-person detail-icon"></i>
                     <div>
                         <span class="fw-medium fz-12 mb-2 sc-text">إسم العميل</span>
                         <p class="fs-6 fw-bold grayed-text">محمد احمد محمود</p>
@@ -454,7 +455,7 @@
 
                 <!-- Account Number -->
                 <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-bank detail-icon"></i>
+                    <i class="bi bi-credit-card detail-icon"></i>
                     <div>
                         <span class="fw-medium fz-12 mb-2 sc-text">رقم الحساب / IBAN</span>
                         <p class="fs-6 fw-bold grayed-text">123456789123456</p>
@@ -480,7 +481,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-handle"></div>
-                <div class="container py-3">
+                <div>
                     <h2 class="fs-5 prim-text fw-bold mb-4">إضافة حساب</h2>
 
                     <form>
@@ -517,7 +518,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-handle"></div>
-                <div class="container py-3">
+                <div>
                     <h2 class="fs-5 prim-text fw-bold mb-4">إضافة جهة معاملة</h2>
 
                     <form>
@@ -552,7 +553,7 @@
                         <div class="form-group">
                             <label class="form-label">تاريخ الإضافة</label>
                             <div class="form-date-wrapper">
-                                <input type="text" class="form-control" placeholder="أدخل المبلغ هنا...">
+                                <input type="date" class="form-control" placeholder="إختر التاريخ هنا...">
                                 <i class="bi bi-calendar-event"></i>
                             </div>
                         </div>
@@ -564,7 +565,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <button type="button" class="btn-main" data-bs-toggle="modal"
+                            <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
                                 data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">أضف</button>
                             <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                         </div>
@@ -579,7 +580,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-handle"></div>
-                <div class="container py-3">
+                <div>
                     <h2 class="fs-5 prim-text fw-bold mb-4">إضافة معاملة</h2>
 
                     <form>
@@ -610,7 +611,7 @@
                         </div>
 
                         <div class="mt-4">
-                            <button type="button" class="btn-main" data-bs-toggle="modal"
+                            <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
                                 data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">أضف</button>
                             <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                         </div>
@@ -638,8 +639,8 @@
                     <p class="confirmation-desc">بالضغط علي تأكيد فأنت تصدق علي سداد المبلغ المستحق.</p>
 
                     <div class="mt-4">
-                        <button type="button" class="btn-main" data-bs-toggle="modal" data-bs-target="#successModal"
-                            data-bs-dismiss="modal">تأكيد</button>
+                        <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
+                            data-bs-target="#successModal" data-bs-dismiss="modal">تأكيد</button>
                         <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                     </div>
                 </div>
