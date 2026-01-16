@@ -1023,8 +1023,8 @@ ul {
 
 /* Custom Toggle Switch */
 .form-switch .form-check-input {
-    width: 40px;
-    height: 20px;
+    width: 32px;
+    height: 16px;
     background-color: #E5E7EB;
     border: none;
     cursor: pointer;
@@ -1032,6 +1032,10 @@ ul {
 
 .form-switch .form-check-input:checked {
     background-color: var(--primary-color);
+}
+
+.form-switch .form-check-input:focus {
+    box-shadow: none;
 }
 
 /* Action Buttons in Cards */
