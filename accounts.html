@@ -309,7 +309,7 @@
                         معلوماتك المصرفية محمية بأعلي معايير الامان
                     </p>
                 </div>
-                <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addTransactionEntityModal">إضافة
+                <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addDueModal">إضافة
                     مستحق</button>
             </div>
 
@@ -578,29 +578,19 @@
         </div>
     </div>
 
-    <!-- Add Transaction Entity Modal -->
-    <div class="modal fade bottom-sheet" id="addTransactionEntityModal" tabindex="-1" aria-hidden="true">
+    <!-- Add Due Modal -->
+    <div class="modal fade bottom-sheet" id="addDueModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-handle"></div>
                 <div>
-                    <h2 class="fs-5 prim-text fw-bold mb-4">إضافة جهة معاملة</h2>
+                    <h2 class="fs-5 prim-text fw-bold mb-4">إضافة مستحق</h2>
 
                     <form>
                         <!-- Entity Name -->
                         <div class="form-group">
-                            <label class="form-label">إسم الجهة</label>
-                            <input type="text" class="form-control" placeholder="أسم الجهة ...">
-                        </div>
-
-                        <!-- Entity Type -->
-                        <div class="form-group">
-                            <label class="form-label">نوع الجهة</label>
-                            <select class="form-control form-select-custom">
-                                <option selected disabled>إختر نوع الجهة...</option>
-                                <option>معمل</option>
-                                <option>مورد</option>
-                            </select>
+                            <label class="form-label">إسم المستحق</label>
+                            <input type="text" class="form-control" placeholder="أسم المستحق ...">
                         </div>
 
                         <!-- Amount -->
@@ -616,7 +606,7 @@
 
                         <!-- Addition Date -->
                         <div class="form-group">
-                            <label class="form-label">تاريخ الإضافة</label>
+                            <label class="form-label">تاريخ الإستحقاق</label>
                             <div class="form-date-wrapper">
                                 <input type="text" class="form-control flatpickr-input"
                                     placeholder="إختر التاريخ هنا...">
@@ -691,19 +681,14 @@
     <!-- Payment Confirmation Modal -->
     <div class="modal fade bottom-sheet" id="paymentConfirmationModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content text-center">
                 <div class="modal-handle"></div>
-                <div class="container py-4">
-                    <div class="confirmation-illustration-wrapper">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2489/2489756.png" alt="Payment Confirmation"
-                            class="confirmation-illustration">
-                        <div class="confirmation-check">
-                            <i class="bi bi-check"></i>
-                        </div>
-                    </div>
+                <div>
+                    <img src="assets/img/Success-Illustration.svg" class="d-block mb-4 mx-auto"
+                        alt="Payment Confirmation">
 
-                    <h2 class="confirmation-title">تأكيد السداد</h2>
-                    <p class="confirmation-desc">بالضغط علي تأكيد فأنت تصدق علي سداد المبلغ المستحق.</p>
+                    <h2 class="fs-6 sc-text fw-bold mb-12">تأكيد السداد</h2>
+                    <p class="fz-14 sc-text">بالضغط علي تأكيد فأنت تصدق علي سداد المبلغ المستحق.</p>
 
                     <div class="mt-4">
                         <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
@@ -718,22 +703,20 @@
     <!-- Success Modal -->
     <div class="modal fade bottom-sheet" id="successModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content position-relative overflow-hidden">
                 <div class="modal-handle"></div>
-                <div class="container py-4 position-relative overflow-hidden">
-                    <div class="confetti-bg"></div>
+                <div class="confetti-bg"></div>
 
-                    <div class="success-illustration-wrapper">
-                        <i class="bi bi-check-lg"></i>
-                    </div>
+                <div class="success-illustration-wrapper">
+                    <i class="bi bi-check-lg"></i>
+                </div>
 
-                    <p class="hadith-intro">قال رسول الله - صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ -:</p>
-                    <h2 class="hadith-text">كان الله في عون العبد ما دام العبد في عون أخيه</h2>
-                    <p class="hadith-quote">صنائع المعروف تقي مصارع السوء</p>
+                <p class="hadith-intro">قال رسول الله - صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ -:</p>
+                <h2 class="hadith-text">كان الله في عون العبد ما دام العبد في عون أخيه</h2>
+                <p class="hadith-quote">صنائع المعروف تقي مصارع السوء</p>
 
-                    <div class="mt-4">
-                        <button type="button" class="btn-outline-success-lg" data-bs-dismiss="modal">رجوع</button>
-                    </div>
+                <div class="mt-4">
+                    <button type="button" class="btn-outline-success-lg" data-bs-dismiss="modal">رجوع</button>
                 </div>
             </div>
         </div>
