@@ -61,7 +61,7 @@
 
         <p class="fz-14 grayed-text mb-4">الحسابات البنكية والمعلومات المالية</p>
 
-        <!-- Debt Card 1 -->
+        <!-- Property Card 1 -->
         <div class="bank-card p-3 mb-12 brd-gray">
             <h3 class="prim-text fs-6 fw-bold me-2">منزل العائلة </h3>
             <div class="prim-text fz-12 my-2"><i class="bi bi-geo-alt"></i><span class="grayed-500 ms-1">شارع 9 ,
@@ -70,10 +70,12 @@
             <div class="d-flex align-items-center justify-content-between">
                 <span class="card-badge green">موثق</span>
                 <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                    data-bs-target="#debtDetailsModal">عرض
+                    data-bs-target="#propertyDetailsModal">عرض
                     التفاصيل</a>
             </div>
         </div>
+
+        <!-- Property Card 2 -->
         <div class="bank-card p-3 mb-12 brd-gray">
             <h3 class="prim-text fs-6 fw-bold me-2">منزل العائلة </h3>
             <div class="prim-text fz-12 my-2"><i class="bi bi-geo-alt"></i><span class="grayed-500 ms-1">شارع 9 ,
@@ -82,10 +84,12 @@
             <div class="d-flex align-items-center justify-content-between">
                 <span class="card-badge green">موثق</span>
                 <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                    data-bs-target="#debtDetailsModal">عرض
+                    data-bs-target="#propertyDetailsModal">عرض
                     التفاصيل</a>
             </div>
         </div>
+
+        <!-- Property Card 3 -->
         <div class="bank-card p-3 mb-12 brd-gray">
             <h3 class="prim-text fs-6 fw-bold me-2">منزل العائلة </h3>
             <div class="prim-text fz-12 my-2"><i class="bi bi-geo-alt"></i><span class="grayed-500 ms-1">شارع 9 ,
@@ -94,10 +98,11 @@
             <div class="d-flex align-items-center justify-content-between">
                 <span class="card-badge green">موثق</span>
                 <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                    data-bs-target="#debtDetailsModal">عرض
+                    data-bs-target="#propertyDetailsModal">عرض
                     التفاصيل</a>
             </div>
         </div>
+
         <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3 mt-4">
             <img src="assets/img/red-checked.svg" alt="checked">
             <p class="note-text">
@@ -222,95 +227,52 @@
         </div>
     </div>
 
-    <!-- Commitment Details Modal -->
-    <div class="modal fade bottom-sheet" id="commitmentDetailsModal" tabindex="-1" aria-hidden="true">
+    <!-- Property Details Modal -->
+    <div class="modal fade bottom-sheet" id="propertyDetailsModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-handle"></div>
-                <h2 class="fs-5 prim-text fw-bold mb-4">تفاصيل الإلتزام</h2>
+                <h2 class="fs-5 prim-text fw-bold mb-4">تفاصيل الملك</h2>
 
-                <!-- Commitment Name -->
+                <!-- Property Name -->
                 <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-journal-text detail-icon"></i>
+                    <i class="bi bi-bank detail-icon"></i>
                     <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">إسم الإلتزام</span>
-                        <p class="fs-6 fw-bold grayed-text">كفالة يتيم</p>
+                        <span class="fw-medium fz-12 mb-2 sc-text">إسم الملك</span>
+                        <p class="fs-6 fw-bold grayed-text">منزل العائلة</p>
                     </div>
                 </div>
 
-                <!-- Amount -->
+                <!-- Property Type -->
                 <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-cash-stack detail-icon"></i>
+                    <i class="bi bi-bank detail-icon"></i>
                     <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">المبلغ</span>
-                        <p class="fs-6 fw-bold grayed-text">50.000 جنية</p>
-                    </div>
-                </div>
-
-                <!-- Frequency -->
-                <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-arrow-repeat detail-icon"></i>
-                    <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">دورية الدفع</span>
-                        <p class="fs-6 fw-bold grayed-text">شهريا</p>
-                    </div>
-                </div>
-
-                <!-- Notes -->
-                <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-sticky detail-icon"></i>
-                    <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">ملاحظاتك</span>
-                        <p class="fs-6 fw-bold grayed-text">ستظهر هنا ملاحظات المستخدم صاحب الحساب</p>
-                    </div>
-                </div>
-
-                <div class="mt-4">
-                    <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
-                        data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">تم الدفع</button>
-                    <button class="btn-outline-primary" data-bs-dismiss="modal">إغلاق</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Debt Details Modal -->
-    <div class="modal fade bottom-sheet" id="debtDetailsModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-handle"></div>
-                <h2 class="fs-5 prim-text fw-bold mb-4">تفاصيل الدين</h2>
-
-                <!-- Creditor Name -->
-                <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-person detail-icon"></i>
-                    <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">إسم الدائن</span>
-                        <p class="fs-6 fw-bold grayed-text">سين من الناس</p>
-                    </div>
-                </div>
-
-                <!-- Amount -->
-                <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-cash-stack detail-icon"></i>
-                    <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">المبلغ</span>
-                        <p class="fs-6 fw-bold grayed-text">50.000 جنية</p>
-                    </div>
-                </div>
-
-                <!-- Due Date -->
-                <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-calendar-event detail-icon"></i>
-                    <div>
-                        <span class="fw-medium fz-12 mb-2 sc-text">تاريخ السداد</span>
+                        <span class="fw-medium fz-12 mb-2 sc-text">نوع الملك</span>
                         <p class="fs-6 fw-bold grayed-text">20 فبراير 2026</p>
                     </div>
                 </div>
 
+                <!-- Status -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-bank detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">الحالة</span>
+                        <p class="fs-6 fw-bold grayed-text"><span class="card-badge green">موثق</span></p>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-geo-alt detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">الموقع</span>
+                        <p class="fs-6 fw-bold grayed-text">شارع 9 , المعادي</p>
+                    </div>
+                </div>
+
                 <!-- Notes -->
                 <div class="detail-field d-flex align-items-center gap-2 mb-3">
-                    <i class="bi bi-sticky detail-icon"></i>
+                    <i class="bi bi-bank detail-icon"></i>
                     <div>
                         <span class="fw-medium fz-12 mb-2 sc-text">ملاحظاتك</span>
                         <p class="fs-6 fw-bold grayed-text">ستظهر هنا ملاحظات المستخدم صاحب الحساب</p>
@@ -322,93 +284,36 @@
         </div>
     </div>
 
-    <!-- Add Commitment Modal -->
-    <div class="modal fade bottom-sheet" id="addCommitmentModal" tabindex="-1" aria-hidden="true">
+    <!-- Add Property Modal -->
+    <div class="modal fade bottom-sheet" id="addPropertyModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-handle"></div>
                 <div>
-                    <h2 class="fs-5 prim-text fw-bold mb-4">إضافة إلتزام</h2>
+                    <h2 class="fs-5 prim-text fw-bold mb-4">إضافة ملك</h2>
 
                     <form>
-                        <!-- Commitment Name -->
+                        <!-- Property Type -->
                         <div class="form-group">
-                            <label class="form-label">إسم الإلتزام</label>
-                            <input type="text" class="form-control" placeholder="أكتب إسم الإلتزام...">
-                        </div>
-
-                        <!-- Amount -->
-                        <div class="form-group">
-                            <label class="form-label">المبلغ</label>
-                            <input type="text" class="form-control" placeholder="أكتب المبلغ هنا...">
-                        </div>
-
-                        <!-- Date -->
-                        <div class="form-group">
-                            <label class="form-label">التاريخ</label>
-                            <div class="form-date-wrapper">
-                                <input type="text" class="form-control flatpickr-input"
-                                    placeholder="إختر التاريخ هنا...">
-                                <i class="bi bi-calendar-event"></i>
-                            </div>
-                        </div>
-
-                        <!-- Frequency -->
-                        <div class="form-group">
-                            <label class="form-label">دورية الدفع</label>
+                            <label class="form-label">نوع الملك</label>
                             <select class="form-control form-select-custom">
-                                <option selected disabled>دورية الدفع...</option>
-                                <option>شهريا</option>
-                                <option>سنويا</option>
+                                <option selected disabled>نوع الملك هنا</option>
+                                <option>منزل</option>
+                                <option>أرض</option>
+                                <option>سيارة</option>
                             </select>
                         </div>
 
-                        <!-- Notes -->
+                        <!-- Property Name -->
                         <div class="form-group">
-                            <label class="form-label">ملاحظاتك</label>
-                            <textarea class="form-control" rows="4" placeholder="أدخل ملاحظاتك هنا..."></textarea>
+                            <label class="form-label">إسم الملك</label>
+                            <input type="text" class="form-control" placeholder="أكتب إسم الملك هنا...">
                         </div>
 
-                        <div class="mt-4">
-                            <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
-                                data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">أضف</button>
-                            <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Add Debt Modal -->
-    <div class="modal fade bottom-sheet" id="addDebtModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-handle"></div>
-                <div>
-                    <h2 class="fs-5 prim-text fw-bold mb-4">إضافة دين</h2>
-
-                    <form>
-                        <!-- Creditor Name -->
+                        <!-- Property Address -->
                         <div class="form-group">
-                            <label class="form-label">إسم الدائن</label>
-                            <input type="text" class="form-control" placeholder="أكتب إسم الدائن...">
-                        </div>
-
-                        <!-- Amount -->
-                        <div class="form-group">
-                            <label class="form-label">المبلغ</label>
-                            <input type="text" class="form-control" placeholder="أكتب المبلغ هنا...">
-                        </div>
-
-                        <!-- Due Date -->
-                        <div class="form-group">
-                            <label class="form-label">تاريخ السداد</label>
-                            <div class="form-date-wrapper">
-                                <input type="text" class="form-control flatpickr-input"
-                                    placeholder="إختر التاريخ هنا...">
-                                <i class="bi bi-calendar-event"></i>
-                            </div>
+                            <label class="form-label">عنوان الملك</label>
+                            <input type="text" class="form-control" placeholder="أدخل عنوان الملك هنا..">
                         </div>
 
                         <!-- Notes -->
@@ -418,53 +323,10 @@
                         </div>
 
                         <div class="mt-4">
-                            <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
-                                data-bs-target="#paymentConfirmationModal" data-bs-dismiss="modal">أضف</button>
+                            <button type="submit" class="btn-main mb-2">أضف</button>
                             <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Payment Confirmation Modal -->
-    <div class="modal fade bottom-sheet" id="paymentConfirmationModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content text-center">
-                <div class="modal-handle"></div>
-                <div>
-                    <img src="assets/img/Success-Illustration.svg" class="d-block mb-4 mx-auto"
-                        alt="Payment Confirmation">
-
-                    <h2 class="fs-6 sc-text fw-bold mb-12">تأكيد السداد</h2>
-                    <p class="fz-14 sc-text">بالضغط علي تأكيد فأنت تصدق علي سداد المبلغ المستحق.</p>
-
-                    <div class="mt-4">
-                        <button type="button" class="btn-main mb-2" data-bs-toggle="modal"
-                            data-bs-target="#successModal" data-bs-dismiss="modal">تأكيد</button>
-                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Success Modal -->
-    <div class="modal fade bottom-sheet" id="successModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content position-relative overflow-hidden text-center">
-                <div class="modal-handle"></div>
-                <img src="assets/img/congrates-decore.svg" class="confetti-bg" alt="congrates">
-
-                <img src="assets/img/congrats.svg" class="congrats" alt="Congrats">
-
-                <p class="hadith-intro">قال رسول الله - صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ -:</p>
-                <h2 class="hadith-text">كان الله في عون العبد ما دام العبد في عون أخيه</h2>
-                <p class="hadith-quote">صنائع المعروف تقي مصارع السوء</p>
-
-                <div class="mt-4">
-                    <button type="button" class="btn-outline-primary" data-bs-dismiss="modal">رجوع</button>
                 </div>
             </div>
         </div>
