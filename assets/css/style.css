@@ -906,6 +906,10 @@ ul {
     border: 1px solid #FEEFDA;
 }
 
+.brd-gray {
+    border: 1px solid #EAECF0;
+}
+
 .brd-btm {
     padding-bottom: 8px;
     border-bottom: 0.5px solid #FEEFDA;
