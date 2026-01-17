@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/Al-Wasia-Logo.png">
-    <title>الرئيسية</title>
+    <title>تفاصيل جهة المعاملة</title>
 
     <!-- Google Fonts (Tajawal for Arabic) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,22 +21,24 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="main-header bg-header">
+    <header class="main-header">
         <div class="container">
             <div class="header-top">
-                <div class="profile-section">
-                    <div class="brand">
-                        <img src="assets/img/onboarding_illustration.svg" class="img-fluid" alt="AlWasia">
-                    </div>
-                    <span class="header-title fw-bold">عبدالله محمود</span>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="accounts.html" class="back-btn">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                    <h1 class="header-title fw-medium">تفاصيل جهة المعاملة</h1>
                 </div>
                 <div class="d-flex align-items-center">
-                    <div class="log-badge d-flex align-items-center gap-1 flex-shrink-0">
+                    <div class="log-badge d-flex align-items-center flex-shrink-0 gap-1">
                         <button class="log-btn open">
                             <img src="assets/img/open-log.svg" alt="مفتوح">
                             <img src="assets/img/close-log.svg" class="d-none" alt="مغلق">
@@ -55,146 +57,88 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container">
+    <main class="container mt-4">
 
-        <!-- Status Card -->
-        <section class="status-card">
-            <h2 class="prim-text fz-14 fw-bold mb-2">حالة أقسام الوصية</h2>
-            <p class="sc-text mb-12 fz-12">لقد أنجزت 4 أقسام من 8 في وصيتك، تابع الأقسام المتبقية إن وجدت.</p>
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center">
+                <h3 class="colored fs-6 fw-bold me-3">ألفا</h3>
+                <span class="list-card-type">معمل</span>
+            </div>
+            <span class="card-badge red">مدين</span>
+        </div>
 
-            <div class="grayed-brd progress-container mb-12">
-                <img src="assets/img/smile-Emoji.svg" alt="Smile Emoji">
-                <div class="flex-grow-1">
-                    <div class="fz-12 sc-text mb-1">مكتمل 1 أقسام من 5</div>
-                    <div class="progress-bar-wrapper">
-                        <div class="progress-bar-fill" style="width: 20%;"></div>
+        <!-- Property Card 1 -->
+        <div class="bg-white p-12 mb-4 rounded-4">
+            <div class="balance d-flex align-items-center justify-content-end fw-medium gap-1 mb-12">
+                <span class="grayed-500 fz-12">الرصيد الحالي</span>
+                <span class="fz-14 prim-text"><strong class="me-1">50.000</strong>جنية</span>
+            </div>
+            <div class="mb-12">
+                <span class="fw-medium fz-12 mb-2 grayed-500">تاريخ الإضافة</span>
+                <p class="fz-14 fw-bold prim-text">10 يناير 2025</p>
+            </div>
+            <div>
+                <span class="fw-medium fz-12 mb-2 grayed-500">ملاحظاتك</span>
+                <p class="fz-14 fw-bold prim-text">ستظهر هنا ملاحظات المستخدم صاحب الحساب</p>
+            </div>
+        </div>
+        <h2 class="fs-5 prim-text fw-bold mb-3">المعاملات</h2>
+
+        <!-- Property Card 2 -->
+        <div class="bg-white p-12 mb-4 rounded-2 mb-2">
+            <div class="d-flex align-items-center gap-1 mb-2">
+                <img src="assets/img/receipt-icon.svg" alt="receipt">
+                <span class="fz-14 prim-text fw-bold">29 سبتمبر 2025</span>
+            </div>
+            <div class="grayed-brd p-12 rounded-2">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 grayed-500">الرصيد الحالي</span>
+                        <p class="fz-14 fw-bold prim-text me-1"><span>50.000</span>جنية</p>
                     </div>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 grayed-500">الحالة</span>
+                        <span class="card-badge red">مدين</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="fw-medium fz-12 mb-2 grayed-500">ملحوظة</span>
+                    <p class="fz-14 fw-bold prim-text"> تم السداد انستاباي</p>
                 </div>
             </div>
+        </div>
 
-            <!-- Carousel Indicators (Visual only) -->
-            <div class="d-flex justify-content-center gap-2 rounded-indicators">
-                <span class="rounded-circle"></span>
-                <span class="rounded-circle"></span>
-                <span class="rounded-circle active"></span>
+        <!-- Property Card 3 -->
+        <div class="bg-white p-12 mb-4 rounded-2 mb-2">
+            <div class="d-flex align-items-center gap-1 mb-2">
+                <img src="assets/img/receipt-icon.svg" alt="receipt">
+                <span class="fz-14 prim-text fw-bold">29 سبتمبر 2025</span>
             </div>
-        </section>
-
-        <!-- Action Grid -->
-        <section class="action-grid">
-
-            <!-- Card 1: ديوني -->
-            <a href="debts.html" class="action-card bg-pink">
-                <div class="inner-action-card">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img src="assets/img/debt-icon.svg" alt="ديوني">
-                        <span class="card-badge red">لا يوجد</span>
+            <div class="grayed-brd p-12 rounded-2">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 grayed-500">الرصيد الحالي</span>
+                        <p class="fz-14 fw-bold prim-text me-1"><span>50.000</span>جنية</p>
                     </div>
-                    <h3 class="card-title">ديوني</h3>
-                    <p class="card-subtitle">ديوني, إلتزاماتي, تبرعاتي, صدقاتي...</p>
-                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 grayed-500">الحالة</span>
+                        <span class="card-badge red">مدين</span>
+                    </div>
                 </div>
-            </a>
-
-            <!-- Card 2: وصيّتي -->
-            <a href="write-will.html" class="action-card bg-aqua">
-                <div class="inner-action-card">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img src="assets/img/wasiaty-icon.svg" alt=" وصيّتي">
-                        <span class="card-badge green">تم كتابتها</span>
-                    </div>
-                    <h3 class="card-title"> وصيّتي</h3>
-                    <p class="card-subtitle">توزيع التركة حسب الشريعة.</p>
-                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
-                </div>
-            </a>
-
-            <!-- Card 3: أملاكي -->
-            <a href="properties.html" class="action-card bg-pink">
-                <div class="inner-action-card">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img src="assets/img/amlaky-icon.svg" alt="أملاكي">
-                        <span class="card-badge red">لا يوجد</span>
-                    </div>
-                    <h3 class="card-title">أملاكي</h3>
-                    <p class="card-subtitle">كل ما تملكه من عقارات و ممتلكات...</p>
-                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
-                </div>
-            </a>
-
-            <!-- Card 4: حساباتي -->
-            <a href="accounts.html" class="action-card bg-aqua">
-                <div class="inner-action-card">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img src="assets/img/accounts-icon.svg" alt=" حساباتي">
-                        <span class="card-badge red">لا يوجد</span>
-                    </div>
-                    <h3 class="card-title"> حساباتي</h3>
-                    <p class="card-subtitle">حسابات بنكية, معاملات جارية, مستحقاتي...</p>
-                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
-                </div>
-            </a>
-
-            <!-- Card 5: رسائلي -->
-            <a href="messages.html" class="action-card bg-aqua">
-                <div class="inner-action-card">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <img src="assets/img/messages-icon.svg" alt=" رسائلي">
-                        <span class="card-badge red">لا يوجد</span>
-                    </div>
-                    <h3 class="card-title"> رسائلي</h3>
-                    <p class="card-subtitle">كتابة رسائل لأشخاص من إختيارك تصل إليهم عند الحاجة</p>
-                    <img src="assets/img/card-decoation.svg" class="card-decor" alt="decoration">
-                </div>
-            </a>
-
-        </section>
-
-        <!-- Trustees Section -->
-        <a href="assign-trustees.html" class="trustees-section">
-            <h2 class="section-title mt-4">الأمناء</h2>
-            <!-- Trustees Card in case no trustees -->
-            <div class="trustees-card align-items-center">
-                <img src="assets/img/empty-icon.svg" alt="تحديد أمينين فقط">
-                <a href="assign-trustees.html" class="colored fz-13 text-decoration-underline">هنا</a>
-                <p class="sc-text fz-13 pt-1">يمكنك تحديد أمينين فقط للإطلاع علي ما تريد عند الحاجة</p>
-            </div>
-            <!-- Trustees Card in case trustees are added -->
-            <div class="trustees-card d-none">
-                <!-- Action Buttons -->
-                <div class="trustee-actions d-flex align-items-center justify-content-end gap-3">
-                    <button><img src="assets/img/edit-icon.svg" alt="edit"></button>
-                    <button><img src="assets/img/close-icon.svg" alt="close"></button>
-                </div>
-
-                <!-- Trustees List -->
-                <div class="trustees-list">
-                    <!-- Trustee 1 -->
-                    <div class="trustee-item">
-                        <div class="trustee-main">
-                            <img src="assets/img/person-icon.svg" alt="أمين">
-                            <span class="fz-12 sc-text fw-medium">أحمد محمد طلعت</span>
-                        </div>
-                        <div class="trustee-main">
-                            <img src="assets/img/phone-icon.svg" alt="الهاتف">
-                            <span class="fz-12 sc-text fw-medium">01123456789012</span>
-                        </div>
-                    </div>
-
-                    <!-- Trustee 2 -->
-                    <div class="trustee-item">
-                        <div class="trustee-main">
-                            <img src="assets/img/person-icon.svg" alt="أمين">
-                            <span class="fz-12 sc-text fw-medium">أحمد محمد طلعت</span>
-                        </div>
-                        <div class="trustee-main">
-                            <img src="assets/img/phone-icon.svg" alt="الهاتف">
-                            <span class="fz-12 sc-text fw-medium">01123456789012</span>
-                        </div>
-                    </div>
+                <div>
+                    <span class="fw-medium fz-12 mb-2 grayed-500">ملحوظة</span>
+                    <p class="fz-14 fw-bold prim-text"> تم السداد انستاباي</p>
                 </div>
             </div>
-        </a>
+        </div>
+
+        <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3 mt-4">
+            <img src="assets/img/red-checked.svg" alt="checked">
+            <p class="note-text">
+                معلوماتك المصرفية محمية بأعلي معايير الامان
+            </p>
+        </div>
+        <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addPropertyModal">إضافة معاملة</button>
 
     </main>
 
@@ -311,10 +255,119 @@
         </div>
     </div>
 
+    <!-- Property Details Modal -->
+    <div class="modal fade bottom-sheet" id="propertyDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-handle"></div>
+                <h2 class="fs-5 prim-text fw-bold mb-4">تفاصيل الملك</h2>
+
+                <!-- Property Name -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-bank detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">إسم الملك</span>
+                        <p class="fs-6 fw-bold grayed-text">منزل العائلة</p>
+                    </div>
+                </div>
+
+                <!-- Property Type -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-bank detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">نوع الملك</span>
+                        <p class="fs-6 fw-bold grayed-text">20 فبراير 2026</p>
+                    </div>
+                </div>
+
+                <!-- Status -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-bank detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">الحالة</span>
+                        <p class="fs-6 fw-bold grayed-text"><span class="card-badge green">موثق</span></p>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-geo-alt detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">الموقع</span>
+                        <p class="fs-6 fw-bold grayed-text">شارع 9 , المعادي</p>
+                    </div>
+                </div>
+
+                <!-- Notes -->
+                <div class="detail-field d-flex align-items-center gap-2 mb-3">
+                    <i class="bi bi-bank detail-icon"></i>
+                    <div>
+                        <span class="fw-medium fz-12 mb-2 sc-text">ملاحظاتك</span>
+                        <p class="fs-6 fw-bold grayed-text">ستظهر هنا ملاحظات المستخدم صاحب الحساب</p>
+                    </div>
+                </div>
+
+                <button class="btn-outline-primary" data-bs-dismiss="modal">إغلاق</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Property Modal -->
+    <div class="modal fade bottom-sheet" id="addPropertyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-handle"></div>
+                <div>
+                    <h2 class="fs-5 prim-text fw-bold mb-4">إضافة ملك</h2>
+
+                    <form>
+                        <!-- Property Type -->
+                        <div class="form-group">
+                            <label class="form-label">نوع الملك</label>
+                            <select class="form-control form-select-custom">
+                                <option selected disabled>نوع الملك هنا</option>
+                                <option>منزل</option>
+                                <option>أرض</option>
+                                <option>سيارة</option>
+                            </select>
+                        </div>
+
+                        <!-- Property Name -->
+                        <div class="form-group">
+                            <label class="form-label">إسم الملك</label>
+                            <input type="text" class="form-control" placeholder="أكتب إسم الملك هنا...">
+                        </div>
+
+                        <!-- Property Address -->
+                        <div class="form-group">
+                            <label class="form-label">عنوان الملك</label>
+                            <input type="text" class="form-control" placeholder="أدخل عنوان الملك هنا..">
+                        </div>
+
+                        <!-- Notes -->
+                        <div class="form-group">
+                            <label class="form-label">ملاحظاتك</label>
+                            <textarea class="form-control" rows="4" placeholder="أدخل ملاحظاتك هنا..."></textarea>
+                        </div>
+
+                        <div class="mt-4">
+                            <button type="submit" class="btn-main mb-2">أضف</button>
+                            <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
 </body>
 
 </html>

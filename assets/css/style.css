@@ -399,14 +399,17 @@ ul {
     margin-bottom: 25px;
 }
 
-.progress-container {
-    background: #F9FAFB;
-    border: 1px solid #EAECF0;
+.grayed-brd.progress-container {
     border-radius: 12px;
     padding: 8px;
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.grayed-brd {
+    background: #F9FAFB;
+    border: 1px solid #EAECF0;
 }
 
 .progress-bar-wrapper {
@@ -908,6 +911,16 @@ ul {
 
 .brd-gray {
     border: 1px solid #EAECF0;
+}
+
+.balance {
+    background: #EFFFFB;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.p-12 {
+    padding: 12px;
 }
 
 .brd-btm {
