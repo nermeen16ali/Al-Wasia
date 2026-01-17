@@ -902,6 +902,15 @@ ul {
 
 }
 
+.bordered-card {
+    border: 1px solid #FEEFDA;
+}
+
+.brd-btm {
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid #FEEFDA;
+}
+
 .account-icon {
     width: 24px;
     height: 24px;
