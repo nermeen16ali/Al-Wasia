@@ -144,54 +144,59 @@
                 <p class="fz-14 grayed-text mb-4">الحسابات البنكية والمعلومات المالية</p>
 
                 <!-- Commitment Card 1 -->
-                <div class="list-card bg-white mb-12 pb-3">
-                    <div class="list-card-header">
-                        <div class="d-flex align-items-center">
-                            <h3 class="prim-text fs-6 fw-bold me-2">كفالة يتيم</h3>
-                            <span class="card-badge blue">جاري</span>
-                        </div>
-                        <button class="close-btn"><i class="bi bi-x"></i></button>
+                <div class="bank-card p-3 mb-3 bordered-card">
+                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <div class="brd-btm d-flex align-items-center justify-content-between mb-2 mb-2">
+                        <h3 class="prim-text fs-6 fw-bold me-2">كفالة يتيم</h3>
+                        <span class="card-badge blue">جاري</span>
                     </div>
-                    <div class="list-card-body">
-                        <div class="data-item">
-                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">دورية الدفع</span>
-                            <span class="fz-14 fw-bold prim-text">شهريا</span>
-                        </div>
-                        <div class="data-item">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="data-column">
                             <span class="fz-12 fw-medium grayed-500 d-block mb-1">المبلغ</span>
                             <span class="fz-14 fw-bold prim-text">50.000 جنية</span>
                         </div>
+                        <div class="data-column">
+                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">دورية الدفع</span>
+                            <span class="fz-14 fw-bold prim-text">شهريا</span>
+                        </div>
                     </div>
-                    <div class="card-actions">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
                         <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                            data-bs-target="#commitmentDetailsModal">عرض التفاصيل</a>
-                        <button class="btn-outline-primary sm">تم الدفع</button>
+                            data-bs-target="#commitmentDetailsModal">عرض
+                            التفاصيل</a>
+                        <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
+                            <label class="fz-12 fw-medium grayed-text" for="commitmentSwitch1">تم السداد</label>
+                            <input class="form-check-input m-0" type="checkbox" role="switch" id="commitmentSwitch1"
+                                checked>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Commitment Card 2 -->
-                <div class="list-card bg-white mb-12 pb-3">
-                    <div class="list-card-header">
-                        <div class="d-flex align-items-center">
-                            <h3 class="prim-text fs-6 fw-bold me-2">كفالة يتيم</h3>
-                            <span class="card-badge blue">جاري</span>
-                        </div>
-                        <button class="close-btn"><i class="bi bi-x"></i></button>
+                <div class="bank-card p-3 mb-3 bordered-card">
+                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <div class="brd-btm d-flex align-items-center justify-content-between mb-2 mb-2">
+                        <h3 class="prim-text fs-6 fw-bold me-2">كفالة يتيم</h3>
+                        <span class="card-badge blue">جاري</span>
                     </div>
-                    <div class="list-card-body">
-                        <div class="data-item">
-                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">دورية الدفع</span>
-                            <span class="fz-14 fw-bold prim-text">شهريا</span>
-                        </div>
-                        <div class="data-item">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="data-column">
                             <span class="fz-12 fw-medium grayed-500 d-block mb-1">المبلغ</span>
                             <span class="fz-14 fw-bold prim-text">50.000 جنية</span>
                         </div>
+                        <div class="data-column">
+                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">دورية الدفع</span>
+                            <span class="fz-14 fw-bold prim-text">شهريا</span>
+                        </div>
                     </div>
-                    <div class="card-actions">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
                         <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                            data-bs-target="#commitmentDetailsModal">عرض التفاصيل</a>
-                        <button class="btn-outline-primary sm">تم الدفع</button>
+                            data-bs-target="#commitmentDetailsModal">عرض
+                            التفاصيل</a>
+                        <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
+                            <label class="fz-12 fw-medium grayed-text" for="commitmentSwitch2">تم السداد</label>
+                            <input class="form-check-input m-0" type="checkbox" role="switch" id="commitmentSwitch2"
+                                checked>
+                        </div>
                     </div>
                 </div>
 
