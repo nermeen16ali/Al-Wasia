@@ -881,6 +881,12 @@ ul {
     z-index: 99;
 }
 
+/* .message-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px;
+} */
+
 /* Bank Account Cards */
 .bank-grid {
     --bs-gutter-x: 10px;
@@ -1189,6 +1195,10 @@ textarea.form-control {
 .hadith-quote {
     font-size: 1rem;
     font-weight: 500;
+    color: var(--neutral-gray);
+}
+
+.neytalgray-text {
     color: var(--neutral-gray);
 }
 

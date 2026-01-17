@@ -57,34 +57,41 @@
     <!-- Main Content -->
     <main class="container mt-4">
         <form>
-            <section class="wasia-card p-3 mb-3">
-                <div class="form-group mb-3">
-                    <label class="form-label fz-14 fw-bold prim-text">إسم المرسل إليه</label>
-                    <input type="text" class="form-control" placeholder="أدخل إسم المرسل إليه">
-                </div>
+            <div class="form-group mb-3">
+                <label class="form-label">إسم المرسل إليه</label>
+                <input type="text" class="form-control" placeholder="أدخل إسم المرسل إليه">
+            </div>
+            <section class="wasia-card py-4 px-3 mb-3">
+                <h2 class="sc-text fs-6 mb-2 fw-bold">محتوي الرسالة</h2>
 
-                <div class="form-group mb-0">
-                    <label class="form-label fz-14 fw-bold prim-text">محتوي الرسالة</label>
-                    <div class="will-textarea-container">
-                        <textarea class="will-textarea" placeholder="أكتب رسالتك هنا..."
-                            style="height: 300px;"></textarea>
-                    </div>
+                <div class="will-textarea-container">
+                    <textarea class="will-textarea" placeholder="أكتب رسالتك هنا...">بسم الله الرحمن الرحيم
+
+هذه وصيتي أنا ........................................
+
+وأشهد أن لا إله إلا الله وأن محمدًا رسول الله.
+
+1. إقرار بالعقيدة
+أوصي أهلي بتقوى الله والتمسك بدينه.
+
+2. توجيهات عامة للأسرة
+................................................................</textarea>
                 </div>
             </section>
-
-            <div class="d-flex flex-column gap-3">
-                <button type="submit" class="btn-main">حفظ</button>
-                <button type="button" class="btn-outline-primary w-100 py-3">حفظ كمسودة</button>
-                <a href="messages.html" class="btn-cancel text-center text-decoration-none">إلغاء</a>
+            <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3 mt-5 mb-2">
+                <img src="assets/img/red-checked.svg" alt="checked">
+                <p class="note-text">
+                    معلوماتك المصرفية محمية بأعلي معايير الامان
+                </p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+                <div class="d-flex align-items-center gap-2">
+                    <button type="submit" class="btn-main flex-grow-1">حفظ</button>
+                    <button type="button" class="btn-outline-primary flex-grow-1">حفظ كمسودة</button>
+                </div>
+                <a href="messages.html" class="btn-cancel text-center flex-grow-1">إلغاء</a>
             </div>
         </form>
-
-        <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3 mt-5">
-            <img src="assets/img/red-checked.svg" alt="checked">
-            <p class="note-text">
-                معلوماتك المصرفية محمية بأعلي معايير الامان
-            </p>
-        </div>
     </main>
 
     <!-- Bootstrap 5 JS Bundle -->
