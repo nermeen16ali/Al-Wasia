@@ -61,18 +61,86 @@
 
         <!-- Tabs -->
         <ul class="nav nav-tabs custom-tabs" id="debtTabs" role="tablist">
-            <button class="nav-link active" id="commitments-tab" data-bs-toggle="tab"
-                data-bs-target="#commitments-content" type="button" role="tab" aria-controls="commitments-content"
-                aria-selected="true">إلتزاماتي</button>
-            <button class="nav-link" id="debts-tab" data-bs-toggle="tab" data-bs-target="#debts-content" type="button"
-                role="tab" aria-controls="debts-content" aria-selected="false">ديوني</button>
+            <button class="nav-link active" id="debts-tab" data-bs-toggle="tab" data-bs-target="#debts-content"
+                type="button" role="tab" aria-controls="debts-content" aria-selected="true">ديوني</button>
+            <button class="nav-link" id="commitments-tab" data-bs-toggle="tab" data-bs-target="#commitments-content"
+                type="button" role="tab" aria-controls="commitments-content" aria-selected="false">إلتزاماتي</button>
         </ul>
 
         <div class="tab-content" id="debtTabsContent">
 
+            <!-- Debts Tab -->
+            <div class="tab-pane fade show active" id="debts-content" role="tabpanel" aria-labelledby="debts-tab">
+                <p class="fz-14 grayed-text mb-4">الحسابات البنكية والمعلومات المالية</p>
+
+                <!-- Debt Card 1 -->
+                <div class="bank-card p-3 mb-3">
+                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <div class="d-flex align-items-center justify-content-between mb-2 mb-2">
+                        <h3 class="prim-text fs-6 fw-bold me-2">سين من الناس</h3>
+                        <span class="card-badge red">جاري</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="data-column">
+                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">المبلغ</span>
+                            <span class="fz-14 fw-bold prim-text">50.000 جنية</span>
+                        </div>
+                        <div class="data-column">
+                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">تاريخ الإستحقاق</span>
+                            <span class="fz-14 fw-bold prim-text">20 فبراير 2026</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
+                            data-bs-target="#debtDetailsModal">عرض
+                            التفاصيل</a>
+                        <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
+                            <label class="fz-12 fw-medium grayed-text" for="debtSwitch1">تم السداد</label>
+                            <input class="form-check-input m-0" type="checkbox" role="switch" id="debtSwitch1" checked>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Debt Card 2 -->
+                <div class="bank-card p-3 mb-3">
+                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <div class="d-flex align-items-center justify-content-between mb-2 mb-2">
+                        <h3 class="prim-text fs-6 fw-bold me-2">سين من الناس</h3>
+                        <span class="card-badge red">جاري</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="data-column">
+                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">المبلغ</span>
+                            <span class="fz-14 fw-bold prim-text">50.000 جنية</span>
+                        </div>
+                        <div class="data-column">
+                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">تاريخ الإستحقاق</span>
+                            <span class="fz-14 fw-bold prim-text">20 فبراير 2026</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
+                            data-bs-target="#debtDetailsModal">عرض
+                            التفاصيل</a>
+                        <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
+                            <label class="fz-12 fw-medium grayed-text" for="debtSwitch2">تم السداد</label>
+                            <input class="form-check-input m-0" type="checkbox" role="switch" id="debtSwitch2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3">
+                    <img src="assets/img/red-checked.svg" alt="checked">
+                    <p class="note-text">
+                        معلوماتك المصرفية محمية بأعلي معايير الامان
+                    </p>
+                </div>
+                <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addDebtModal">إضافة
+                    دين</button>
+            </div>
+
             <!-- Commitments Tab -->
-            <div class="tab-pane fade show active" id="commitments-content" role="tabpanel"
-                aria-labelledby="commitments-tab">
+            <div class="tab-pane fade" id="commitments-content" role="tabpanel" aria-labelledby="commitments-tab">
                 <p class="fz-14 grayed-text mb-4">الحسابات البنكية والمعلومات المالية</p>
 
                 <!-- Commitment Card 1 -->
@@ -135,70 +203,6 @@
                 </div>
                 <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addCommitmentModal">إضافة
                     إلتزام</button>
-            </div>
-
-            <!-- Debts Tab -->
-            <div class="tab-pane fade" id="debts-content" role="tabpanel" aria-labelledby="debts-tab">
-                <p class="fz-14 grayed-text mb-4">الحسابات البنكية والمعلومات المالية</p>
-
-                <!-- Debt Card 1 -->
-                <div class="list-card bg-white mb-12 pb-3">
-                    <div class="list-card-header align-items-center">
-                        <h3 class="prim-text fs-6 fw-bold me-2">سين من الناس</h3>
-                        <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
-                            <label class="fz-12 fw-medium grayed-text" for="debtSwitch1">تم السداد</label>
-                            <input class="form-check-input m-0" type="checkbox" role="switch" id="debtSwitch1" checked>
-                        </div>
-                    </div>
-                    <div class="list-card-body">
-                        <div class="data-item">
-                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">تاريخ الإستحقاق</span>
-                            <span class="fz-14 fw-bold prim-text">20 فبراير 2026</span>
-                        </div>
-                        <div class="data-item">
-                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">المبلغ</span>
-                            <span class="fz-14 fw-bold prim-text">50.000 جنية</span>
-                        </div>
-                    </div>
-                    <div class="card-actions">
-                        <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                            data-bs-target="#debtDetailsModal">عرض التفاصيل</a>
-                    </div>
-                </div>
-
-                <!-- Debt Card 2 -->
-                <div class="list-card bg-white mb-12 pb-3">
-                    <div class="list-card-header align-items-center">
-                        <h3 class="prim-text fs-6 fw-bold me-2">سين من الناس</h3>
-                        <div class="form-check form-switch p-0 m-0 d-flex align-items-center gap-2">
-                            <label class="fz-12 fw-medium grayed-text" for="debtSwitch2">تم السداد</label>
-                            <input class="form-check-input m-0" type="checkbox" role="switch" id="debtSwitch2">
-                        </div>
-                    </div>
-                    <div class="list-card-body">
-                        <div class="data-item">
-                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">تاريخ الإستحقاق</span>
-                            <span class="fz-14 fw-bold prim-text">20 فبراير 2026</span>
-                        </div>
-                        <div class="data-item">
-                            <span class="fz-12 fw-medium grayed-500 d-block mb-1">المبلغ</span>
-                            <span class="fz-14 fw-bold prim-text">50.000 جنية</span>
-                        </div>
-                    </div>
-                    <div class="card-actions">
-                        <a href="#" class="fz-12 fw-medium colored" data-bs-toggle="modal"
-                            data-bs-target="#debtDetailsModal">عرض التفاصيل</a>
-                    </div>
-                </div>
-
-                <div class="footer-note fz-10 d-flex align-items-start gap-1 px-3">
-                    <img src="assets/img/red-checked.svg" alt="checked">
-                    <p class="note-text">
-                        معلوماتك المصرفية محمية بأعلي معايير الامان
-                    </p>
-                </div>
-                <button class="btn-main mt-3" data-bs-toggle="modal" data-bs-target="#addDebtModal">إضافة
-                    دين</button>
             </div>
 
         </div>
