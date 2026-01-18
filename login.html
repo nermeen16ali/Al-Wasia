@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الوصية - تسجيل الدخول</title>
+    <link rel="shortcut icon" href="assets/img/Al-Wasia-Logo.png">
+    <title>تسجيل الدخول</title>
     <!-- Google Fonts: Tajawal -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +19,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="auth-body">
+<body class="bg-gredient p-0">
     <div class="auth-container">
         <!-- Header Section -->
-        <div class="auth-header">
-            <img src="assets/img/onboarding_illustration.svg" alt="وصية" class="auth-illustration">
-            <h1 class="brand-name">وصيّة</h1>
-            <p class="verse-text">{وَمَا تُقَدِّمُوا لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ اللَّهِ}</p>
-            <p class="verse-ref">البقرة 110</p>
+        <div class="text-center py-5">
+            <img src="assets/img/onboarding_illustration.svg" alt="وصية" class="main-illustration">
+            <h1 class="brand-wasia  mb-3">وصيّة</h1>
+            <h2 class="fz-14 grayed-text fw-medium mb-3">{كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ الْمَوْتُ إِن تَرَكَ
+                خَيْرًا الْوَصِيَّةُ} <span class="d-block mt-2">البقرة 180</span>
+            </h2>
+            <p class="fs-5 fw-medium grayed-text">لأن الوصيّة
+                <span class="brown">أمانة</span> وراحة بعد الرحيل
+            </p>
         </div>
 
         <!-- Step 1: Login Form -->
         <div class="auth-card active" id="login-step">
-            <h2 class="auth-title">تسجيل الدخول</h2>
-            <p class="auth-subtitle">سنرسل لك رمز تحقق للدخول الآمن</p>
+            <h2 class="fw-bold prim-text fs-4">تسجيل الدخول</h2>
+            <p class="sc-text fz-14 mb-4">سنرسل لك رمز تحقق للدخول الآمن</p>
 
             <form id="loginForm" onsubmit="event.preventDefault(); goToStep('otp-step');">
                 <div class="mb-3">
@@ -44,7 +49,7 @@
 
                 <div class="mb-4">
                     <label class="form-label">رقم الهاتف</label>
-                    <div class="input-group dir-ltr">
+                    <div class="input-group">
                         <span class="input-group-text">02 <i class="bi bi-chevron-down ms-1"
                                 style="font-size: 0.8rem;"></i></span>
                         <input type="tel" class="form-control text-end" placeholder="01149722784" required>
@@ -54,16 +59,20 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn-auth">تسجيل الدخول</button>
+                <button type="submit" class="btn-main">تسجيل الدخول</button>
 
-                <div class="auth-footer mt-3">
-                    <div class="d-flex align-items-center gap-2 mb-2">
-                        <i class="bi bi-check-circle-fill text-danger"></i>
-                        <span>رقم الهاتف المستخدم هو نفس رقم هاتفك للواتس أب</span>
+                <div class="fz-10 px-3 mt-3">
+                    <div class="d-flex align-items-start gap-1 mb-2 note-text">
+                        <i class="bi bi-check-circle-fill fz-14"></i>
+                        <p>
+                            رقم الهاتف المستخدم هو نفس رقم هاتفك للواتس أب
+                        </p>
                     </div>
-                    <div class="d-flex align-items-center gap-2">
-                        <i class="bi bi-check-circle-fill text-primary"></i>
-                        <span>خصوصيتك أولوية لدينا، نستخدم معلوماتك فقط لإعداد وصيتك و تصل إليك عند الحاجة</span>
+                    <div class="d-flex align-items-start gap-1 mb-2 info-text">
+                        <i class="bi bi-check-circle-fill fz-14"></i>
+                        <p>
+                            خصوصيتك أولوية لدينا, نستخدم معلوماتك فقط لإعداد وصيتك و تصل إليك عند الحاجة
+                        </p>
                     </div>
                 </div>
             </form>
@@ -74,8 +83,9 @@
             <div class="phone-icon-wrapper">
                 <i class="bi bi-telephone-fill"></i>
             </div>
-            <h2 class="auth-title">أدخل رمز التحقق</h2>
-            <p class="auth-subtitle">تم إرسال رمز التحقق إلى <strong>01149722784</strong> يرجى مراجعة الواتس أب لمتابعة
+            <h2 class="fw-bold prim-text fs-4">أدخل رمز التحقق</h2>
+            <p class="sc-text fz-14 mb-4">تم إرسال رمز التحقق إلى <strong>01149722784</strong> يرجى مراجعة الواتس أب
+                لمتابعة
                 عملية تسجيل الدخول.</p>
 
             <form id="otpForm" onsubmit="event.preventDefault(); goToStep('pin-step');">
@@ -90,7 +100,7 @@
                     <a href="#" class="resend-link">ألم تستلم رمز تسجيل الدخول؟ أعد إرساله.</a>
                 </div>
 
-                <button type="submit" class="btn-auth">إرسال</button>
+                <button type="submit" class="btn-main">إرسال</button>
             </form>
         </div>
 
@@ -99,8 +109,9 @@
             <div class="phone-icon-wrapper">
                 <i class="bi bi-telephone-fill"></i>
             </div>
-            <h2 class="auth-title">قم بإنشاء رقم PIN الخاص بك</h2>
-            <p class="auth-subtitle">تم إرسال رمز التحقق إلى <strong>01149722784</strong> يرجى مراجعة الواتس أب لمتابعة
+            <h2 class="fw-bold prim-text fs-4">قم بإنشاء رقم PIN الخاص بك</h2>
+            <p class="sc-text fz-14 mb-4">تم إرسال رمز التحقق إلى <strong>01149722784</strong> يرجى مراجعة الواتس أب
+                لمتابعة
                 عملية تسجيل الدخول.</p>
 
             <div class="alert alert-warning border-0 bg-transparent p-0 mb-4 text-danger d-flex align-items-center gap-2 justify-content-center"
@@ -132,7 +143,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn-auth">إنشاء</button>
+                <button type="submit" class="btn-main">إنشاء</button>
             </form>
         </div>
     </div>
