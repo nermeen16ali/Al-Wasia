@@ -657,7 +657,8 @@ ul {
     box-shadow: none;
 }
 
-.form-control:focus {
+.form-control:focus,
+.otp-input:focus {
     border-color: #0FBC91;
     box-shadow: 0px 1px 2px 0px #1018280D;
     outline: none;
@@ -1447,30 +1448,37 @@ textarea.form-control {
 /* OTP & PIN Styles */
 .otp-container {
     display: flex;
-    gap: 10px;
+    gap: 6px;
+    width: 100%;
     justify-content: center;
     direction: ltr;
 }
 
 .otp-input {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #E2E8F0;
-    border-radius: 12px;
+    flex: 1;
+    height: 43px;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1E293B;
-    background: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    width: 100%;
+    color: var(--text-primary);
+    background: #FEFEFE;
 }
 
-.otp-input:focus {
-    border-color: #0FBC91;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(15, 188, 145, 0.1);
+.otp-input::placeholder {
+    color: #EAECF0;
 }
 
 .phone-icon-wrapper {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+/* .phone-icon-wrapper {
     width: 80px;
     height: 80px;
     background: #E0F2F1;
@@ -1486,7 +1494,7 @@ textarea.form-control {
     font-size: 2.5rem;
     color: #0FBC91;
     transform: rotate(-15deg);
-}
+} */
 
 .resend-link {
     color: #0FBC91;
