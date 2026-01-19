@@ -1,7 +1,6 @@
 :root {
     /* Color Palette */
     --primary-color: #0FBC91;
-    --secondary-color: #ffc107;
     --text-primary: #101828;
     --text-secondary: #475467;
     --text-gray-700: #344054;
@@ -11,29 +10,15 @@
     --bg-color: #F5F7FA;
     --text-color: #2D3142;
     --white: #ffffff;
-    --gray-light: #E0E6ED;
     --gray-dark: #4F5E71;
-    --dark-nav: #1A1D21;
 
     /* Typography */
     --font-family-sans: 'Tajawal', sans-serif;
     --font-size-base: 16px;
-    --font-size-sm: 0.875rem;
-    --font-size-lg: 1.125rem;
-
     /* Spacing */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-
     /* Transitions */
     --transition-base: all 0.3s ease-in-out;
-
-    /* Shadows */
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 *,
@@ -350,14 +335,6 @@ ul {
     gap: 4px;
 }
 
-.profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 15px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    object-fit: cover;
-}
-
 .header-title {
     font-size: 20px;
     color: #FEFEFE;
@@ -544,28 +521,6 @@ ul {
     background: #1849A9;
 }
 
-.card-badge.success {
-    background: #E8F9F5;
-    color: var(--primary-color);
-}
-
-.card-badge.success::before {
-    background: var(--primary-color);
-}
-
-.card-icon {
-    width: 50px;
-    height: 50px;
-    background: #F0FBF8;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-    font-size: 1.8rem;
-}
-
 .card-title {
     font-weight: 500;
     font-size: 18px;
@@ -602,14 +557,6 @@ ul {
     gap: 8px;
 }
 
-.trustees-placeholder-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 20px;
-    opacity: 0.6;
-    text-align: center;
-}
-
 /* Trustees List (index2.html) */
 .trustees-list {
     display: flex;
@@ -627,17 +574,6 @@ ul {
     display: flex;
     align-items: center;
     gap: 6px;
-}
-
-.trustee-details {
-    display: flex;
-    flex-direction: column;
-}
-
-.trustee-phone {
-    font-size: 0.85rem;
-    color: #6B7280;
-    direction: ltr;
 }
 
 .note-text {
@@ -1330,12 +1266,6 @@ textarea.form-control {
     margin: 0 auto;
 }
 
-.auth-illustration {
-    width: 180px;
-    height: auto;
-    margin-bottom: 15px;
-}
-
 .auth-card {
     background: #FEFEFE;
     border-radius: 24px 24px 0 0;
@@ -1410,7 +1340,7 @@ textarea.form-control {
     transform: translateX(-50%);
 }
 
-.resend-link {
+/* .resend-link {
     color: #0FBC91;
     text-decoration: none;
     font-weight: 700;
@@ -1421,7 +1351,7 @@ textarea.form-control {
 
 .resend-link:hover {
     border-bottom-color: #0FBC91;
-}
+} */
 
 /* Flatpickr Customization */
 .flatpickr-calendar {
