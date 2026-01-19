@@ -80,7 +80,8 @@
                     <!-- Bank Card 1 -->
                     <div class="col-6 mb-3">
                         <button class="bank-card" data-bs-toggle="modal" data-bs-target="#bankDetailsModal">
-                            <span class="close-btn"><i class="bi bi-x"></i></span>
+                            <span class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                    class="bi bi-x"></i></span>
                             <img src="assets/img/card-pos.svg" class="mb-2 account-icon"
                                 alt="الحسابات البنكية والمعلومات المالية">
                             <span class="bank-name">إسم البنك هنا</span>
@@ -92,7 +93,8 @@
                     <!-- Bank Card 2 -->
                     <div class="col-6 mb-3">
                         <button class="bank-card" data-bs-toggle="modal" data-bs-target="#bankDetailsModal">
-                            <span class="close-btn"><i class="bi bi-x"></i></span>
+                            <span class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                    class="bi bi-x"></i></span>
                             <img src="assets/img/card-pos.svg" class="mb-2 account-icon"
                                 alt="الحسابات البنكية والمعلومات المالية">
                             <span class="bank-name">إسم البنك هنا</span>
@@ -104,7 +106,8 @@
                     <!-- Bank Card 3 -->
                     <div class="col-6 mb-3">
                         <button class="bank-card" data-bs-toggle="modal" data-bs-target="#bankDetailsModal">
-                            <span class="close-btn"><i class="bi bi-x"></i></span>
+                            <span class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                    class="bi bi-x"></i></span>
                             <img src="assets/img/card-pos.svg" class="mb-2 account-icon"
                                 alt="الحسابات البنكية والمعلومات المالية">
                             <span class="bank-name">إسم البنك هنا</span>
@@ -116,7 +119,8 @@
                     <!-- Bank Card 4 -->
                     <div class="col-6 mb-3">
                         <button class="bank-card" data-bs-toggle="modal" data-bs-target="#bankDetailsModal">
-                            <span class="close-btn"><i class="bi bi-x"></i></span>
+                            <span class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                    class="bi bi-x"></i></span>
                             <img src="assets/img/card-pos.svg" class="mb-2 account-icon"
                                 alt="الحسابات البنكية والمعلومات المالية">
                             <span class="bank-name">إسم البنك هنا</span>
@@ -150,7 +154,8 @@
                             <h3 class="prim-text fs-6 fw-bold me-2">ألفا</h3>
                             <span class="list-card-type">معمل</span>
                         </div>
-                        <button class="close-btn"><i class="bi bi-x"></i></button>
+                        <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                class="bi bi-x"></i></button>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
@@ -176,7 +181,8 @@
                             <h3 class="prim-text fs-6 fw-bold me-2">شركة المتحدة</h3>
                             <span class="list-card-type">مورد</span>
                         </div>
-                        <button class="close-btn"><i class="bi bi-x"></i></button>
+                        <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                class="bi bi-x"></i></button>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
@@ -202,7 +208,8 @@
                             <h3 class="prim-text fs-6 fw-bold me-2">ألفا</h3>
                             <span class="list-card-type">معمل</span>
                         </div>
-                        <button class="close-btn"><i class="bi bi-x"></i></button>
+                        <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                                class="bi bi-x"></i></button>
                     </div>
                     <div class="list-card-body">
                         <div class="data-item">
@@ -727,6 +734,25 @@
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade bottom-sheet" id="deleteConfirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-handle"></div>
+                <div class="mt-4">
+                    <img src="assets/img/confirmation-delete.svg" class="mb-4" alt="delete">
+                    <h2 class="fs-6 sc-text fw-bold mb-12">تأكيد الحذف</h2>
+                    <p class="fz-14 sc-text">أنت على وشك حذف هذه البيانات.<br>هل أنت متأكد من ذلك؟</p>
+
+                    <div class="mt-4">
+                        <button type="button" class="btn-main red mb-2">تأكيد</button>
+                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

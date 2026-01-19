@@ -20,6 +20,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    // Log Button Toggle
+    const logBtn = document.querySelector('.log-btn');
+    if (logBtn) {
+        logBtn.addEventListener('click', function() {
+            const images = this.querySelectorAll('img');
+            images.forEach(img => {
+                img.classList.toggle('d-none');
+            });
+            
+            // Toggle the 'open' class on the button
+            this.classList.toggle('open');
+        });
+    }
+
     // Initialize Flatpickr
     flatpickr(".flatpickr-input", {
         locale: "ar",

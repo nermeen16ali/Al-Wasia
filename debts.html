@@ -75,7 +75,8 @@
 
                 <!-- Debt Card 1 -->
                 <div class="bank-card p-3 mb-3 bordered-card">
-                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                            class="bi bi-x"></i></button>
                     <div class="brd-btm d-flex align-items-center justify-content-between mb-2">
                         <h3 class="prim-text fs-6 fw-bold me-2">سين من الناس</h3>
                         <span class="card-badge red">جاري</span>
@@ -103,7 +104,8 @@
 
                 <!-- Debt Card 2 -->
                 <div class="bank-card p-3 mb-3 bordered-card">
-                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                            class="bi bi-x"></i></button>
                     <div class="brd-btm d-flex align-items-center justify-content-between mb-2">
                         <h3 class="prim-text fs-6 fw-bold me-2">سين من الناس</h3>
                         <span class="card-badge red">جاري</span>
@@ -145,7 +147,8 @@
 
                 <!-- Commitment Card 1 -->
                 <div class="bank-card p-3 mb-3 bordered-card">
-                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                            class="bi bi-x"></i></button>
                     <div class="brd-btm d-flex align-items-center justify-content-between mb-2">
                         <h3 class="prim-text fs-6 fw-bold me-2">كفالة يتيم</h3>
                         <span class="card-badge blue">جاري</span>
@@ -173,7 +176,8 @@
                 </div>
                 <!-- Commitment Card 2 -->
                 <div class="bank-card p-3 mb-3 bordered-card">
-                    <button class="close-btn"><i class="bi bi-x"></i></button>
+                    <button class="close-btn" data-bs-toggle="modal" data-bs-target="#deleteConfirmationModal"><i
+                            class="bi bi-x"></i></button>
                     <div class="brd-btm d-flex align-items-center justify-content-between mb-2">
                         <h3 class="prim-text fs-6 fw-bold me-2">كفالة يتيم</h3>
                         <span class="card-badge blue">جاري</span>
@@ -583,6 +587,25 @@
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade bottom-sheet" id="deleteConfirmationModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-center">
+                <div class="modal-handle"></div>
+                <div class="mt-4">
+                    <img src="assets/img/confirmation-delete.svg" class="mb-4" alt="delete">
+                    <h2 class="fs-6 sc-text fw-bold mb-12">تأكيد الحذف</h2>
+                    <p class="fz-14 sc-text">أنت على وشك حذف هذه البيانات.<br>هل أنت متأكد من ذلك؟</p>
+
+                    <div class="mt-4">
+                        <button type="button" class="btn-main red mb-2">تأكيد</button>
+                        <button type="button" class="btn-cancel" data-bs-dismiss="modal">إلغاء</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

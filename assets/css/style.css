@@ -109,12 +109,6 @@ button {
     animation: fadeIn 1s ease-in-out;
 }
 
-.splash-illustration {
-    width: 250px;
-    height: auto;
-    margin-bottom: 8px;
-}
-
 .brand-wasia {
     font-size: 28px;
     font-weight: 700;
@@ -265,7 +259,6 @@ button {
 }
 
 .btn-main {
-    background: linear-gradient(180deg, #11D4A4 0%, #11D4A4 28.83%, #11D4A4 100%);
     color: #ffffff;
     width: 100%;
     padding: 12px;
@@ -274,7 +267,19 @@ button {
     transition: all 0.3s ease;
 }
 
+.btn-main:not(.red) {
+    background: linear-gradient(180deg, #11D4A4 0%, #11D4A4 28.83%, #11D4A4 100%);
+}
+
+.btn-main.red {
+    background: #E34D4D;
+}
+
 .btn-main:active {
+    transform: scale(0.98);
+}
+
+.btn-main:not(.red):active {
     transform: scale(0.98);
     background: #0FBC91;
 }
@@ -305,6 +310,11 @@ ul {
     padding-top: 40px;
     position: relative;
     overflow: hidden;
+}
+
+.height-header {
+    height: 215px;
+    border-radius: 0 0 24px 24px;
 }
 
 .main-header:not(.bg-header) {
@@ -389,11 +399,18 @@ ul {
 /* Status Card */
 .status-card {
     background: #FEFEFE;
-    border-radius: 8px;
-    padding: 12px 16px;
     margin-top: -78px;
     position: relative;
     z-index: 10;
+}
+
+.status-card.h-card {
+    min-height: calc(100vh - 300px);
+}
+
+.status-card:not(.rounded-24) {
+    border-radius: 8px;
+    padding: 12px 16px;
 }
 
 .status-desc {
@@ -1060,6 +1077,14 @@ ul {
     background: #4F46E5;
     border-radius: 50%;
 } */
+.form-check-input {
+    border: 1px solid #0FBC91;
+}
+
+.form-check-input:checked {
+    background-color: #0FBC91;
+    border-color: #0FBC91;
+}
 
 /* Custom Toggle Switch */
 .form-switch .form-check-input {
@@ -1074,7 +1099,7 @@ ul {
     background-color: var(--primary-color);
 }
 
-.form-switch .form-check-input:focus {
+.form-check-input:focus {
     box-shadow: none;
 }
 
@@ -1119,7 +1144,7 @@ ul {
 .btn-outline-primary {
     border: 1px solid #0FBC91;
     color: #0FBC91;
-    background: transparent;
+    background: #FEFEFE;
     border-radius: 25px;
     font-weight: 500;
     line-height: 20px;
@@ -1301,6 +1326,13 @@ textarea.form-control {
 
 .nav-item.active svg path {
     fill: #FEFEFE;
+}
+
+.nav-item:not(:first-child).active svg path {
+    stroke: #FEFEFE;
+}
+
+.nav-item:first-child.active svg path {
     stroke: #101828;
 }
 
@@ -1598,4 +1630,71 @@ textarea.form-control {
 
 .form-date-wrapper input:focus+i {
     color: var(--primary-color);
+}
+
+/* FAQ Accordion Styles */
+/* .accordion-flush .accordion-item {
+    background: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+} */
+.rounded-24 {
+    border-radius: 24px;
+}
+
+.accordion-flush .accordion-item:not(:last-child) {
+    border-bottom: 0.5px solid #EAECF0;
+}
+
+.accordion-flush .accordion-button {
+    background: #FFFFFF;
+    color: var(--gray-dark);
+    font-weight: 700;
+    font-size: 12px;
+    padding: 16px 0;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.accordion-flush .accordion-button:not(.collapsed) {
+    background: #FFFFFF;
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+.accordion-flush .accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-flush .accordion-button::after {
+    display: none;
+}
+
+.accordion-flush .accordion-icon {
+    color: #0FBC91;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.accordion-flush .accordion-button:not(.collapsed) .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-flush .accordion-body {
+    padding: 0;
+    padding-block: 0 16px;
+    font-size: 12px;
+    color: var(--gray-dark);
+}
+
+.accordion-flush .accordion-button span {
+    flex: 1;
+    text-align: right;
 }
