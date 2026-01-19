@@ -910,12 +910,6 @@ ul {
     z-index: 99;
 }
 
-/* .message-card {
-    background: #FFFFFF;
-    border-radius: 8px;
-    padding: 16px;
-} */
-
 /* Bank Account Cards */
 .bank-grid {
     --bs-gutter-x: 10px;
@@ -1032,55 +1026,6 @@ ul {
     padding: 12px 16px 0;
 }
 
-/* Status Badges */
-/* .status-badge {
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.status-badge.debtor {
-    background: #FFF5F5;
-    color: #FF4D4D;
-}
-
-.status-badge.debtor::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: #FF4D4D;
-    border-radius: 50%;
-}
-
-.status-badge.creditor {
-    background: #E8F9F5;
-    color: var(--primary-color);
-}
-
-.status-badge.creditor::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: var(--primary-color);
-    border-radius: 50%;
-}
-
-.status-badge.due {
-    background: #EEF2FF;
-    color: #4F46E5;
-}
-
-.status-badge.due::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    background: #4F46E5;
-    border-radius: 50%;
-} */
 .form-check-input {
     border: 1px solid #0FBC91;
 }
@@ -1115,23 +1060,6 @@ ul {
     gap: 16px;
     padding: 8px 16px 0;
 }
-
-/* Security Footer */
-/* .security-footer {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.security-text {
-    font-size: 0.75rem;
-    color: #FF4D4D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    font-weight: 600;
-} */
 
 /* Bank Details Modal Specifics */
 
@@ -1186,15 +1114,6 @@ textarea.form-control {
     transform: scale(0.98);
 }
 
-/* Custom Form Elements for Modals */
-/* .form-select-custom {
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%230FBC91' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-position: left 1rem center;
-    background-size: 16px 12px;
-} */
-
 .form-date-wrapper {
     position: relative;
 }
@@ -1221,13 +1140,6 @@ textarea.form-control {
     left: 0;
     z-index: 1;
     width: 100%;
-    /* 
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Cpath d='M50 50 Q60 40 70 50' stroke='%230FBC91' stroke-width='4' fill='none' opacity='0.4'/%3E%3Ccircle cx='100' cy='80' r='4' fill='%232D3142' opacity='0.3'/%3E%3Cpath d='M300 100 Q310 90 320 100' stroke='%230FBC91' stroke-width='4' fill='none' opacity='0.4'/%3E%3Ccircle cx='350' cy='50' r='5' fill='%230FBC91' opacity='0.2'/%3E%3Cpath d='M150 200 Q160 190 170 200' stroke='%232D3142' stroke-width='4' fill='none' opacity='0.3'/%3E%3Ccircle cx='50' cy='250' r='3' fill='%230FBC91' opacity='0.4'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    z-index: 1;
-    pointer-events: none; */
 }
 
 .congrats {
@@ -1455,22 +1367,6 @@ textarea.form-control {
     }
 }
 
-/* .auth-title {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #1E293B;
-    text-align: center;
-    margin-bottom: 10px;
-} */
-
-/* .auth-subtitle {
-    font-size: 0.9rem;
-    color: #64748B;
-    text-align: center;
-    margin-bottom: 30px;
-    line-height: 1.6;
-} */
-
 .input-group-text {
     background: #F8FAFC;
     border: 1px solid #E2E8F0;
@@ -1513,24 +1409,6 @@ textarea.form-control {
     top: -50px;
     transform: translateX(-50%);
 }
-
-/* .phone-icon-wrapper {
-    width: 80px;
-    height: 80px;
-    background: #E0F2F1;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    box-shadow: 0 10px 20px rgba(15, 188, 145, 0.1);
-}
-
-.phone-icon-wrapper i {
-    font-size: 2.5rem;
-    color: #0FBC91;
-    transform: rotate(-15deg);
-} */
 
 .resend-link {
     color: #0FBC91;
@@ -1636,14 +1514,6 @@ textarea.form-control {
     color: var(--primary-color);
 }
 
-/* FAQ Accordion Styles */
-/* .accordion-flush .accordion-item {
-    background: #FFFFFF;
-    border: none;
-    border-radius: 16px;
-    margin-bottom: 12px;
-    overflow: hidden;
-} */
 .rounded-24 {
     border-radius: 24px;
 }
