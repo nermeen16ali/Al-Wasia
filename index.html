@@ -62,21 +62,57 @@
             <h2 class="prim-text fz-14 fw-bold mb-2">حالة أقسام الوصية</h2>
             <p class="sc-text mb-12 fz-12">لقد أنجزت 4 أقسام من 8 في وصيتك، تابع الأقسام المتبقية إن وجدت.</p>
 
-            <div class="grayed-brd progress-container mb-12">
-                <img src="assets/img/smile-Emoji.svg" alt="Smile Emoji">
-                <div class="flex-grow-1">
-                    <div class="fz-12 sc-text mb-1">مكتمل 1 أقسام من 5</div>
-                    <div class="progress-bar-wrapper">
-                        <div class="progress-bar-fill" style="width: 20%;"></div>
+            <!-- Bootstrap Carousel -->
+            <div id="statusCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="grayed-brd progress-container mb-12">
+                            <img src="assets/img/smile-Emoji.svg" alt="Smile Emoji">
+                            <div class="flex-grow-1">
+                                <div class="fz-12 sc-text mb-1">مكتمل 1 أقسام من 5</div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" style="width: 20%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="grayed-brd progress-container mb-12">
+                            <img src="assets/img/smile-Emoji.svg" alt="Smile Emoji">
+                            <div class="flex-grow-1">
+                                <div class="fz-12 sc-text mb-1">مكتمل 2 أقسام من 5</div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="grayed-brd progress-container mb-12">
+                            <img src="assets/img/smile-Emoji.svg" alt="Smile Emoji">
+                            <div class="flex-grow-1">
+                                <div class="fz-12 sc-text mb-1">مكتمل 3 أقسام من 5</div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="progress-bar-fill" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Carousel Indicators (Visual only) -->
-            <div class="d-flex justify-content-center gap-2 rounded-indicators">
-                <span class="rounded-circle"></span>
-                <span class="rounded-circle"></span>
-                <span class="rounded-circle active"></span>
+                <!-- Carousel Indicators (Functional) -->
+                <div
+                    class="carousel-indicators d-flex justify-content-center gap-1 rounded-indicators position-static m-0">
+                    <button type="button" data-bs-target="#statusCarousel" data-bs-slide-to="0"
+                        class="rounded-circle active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#statusCarousel" data-bs-slide-to="1" class="rounded-circle"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#statusCarousel" data-bs-slide-to="2" class="rounded-circle"
+                        aria-label="Slide 3"></button>
+                </div>
             </div>
         </section>
 
@@ -274,7 +310,7 @@
                             رشح صديقاً واكسب! شارك كودك <strong>للحصول على خصومات</strong> على حجزك القادم.
                         </div>
                     </div>
-                    <h3 class="notification-group-title">الأقدم</h3>
+                    <h3 class="notification-group-title">أمس</h3>
                     <div class="notification-item">
                         <div class="notification-icon-wrapper">
                             <i class="bi bi-percent"></i>
