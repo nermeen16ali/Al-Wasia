@@ -14,7 +14,6 @@
 
     /* Typography */
     --font-family-sans: 'Tajawal', sans-serif;
-    --font-size-base: 16px;
     /* Spacing */
     --spacing-md: 1rem;
     /* Transitions */
@@ -69,7 +68,6 @@ p {
 
 body {
     font-family: var(--font-family-sans);
-    font-size: var(--font-size-base);
     color: var(--text-color);
     background-color: var(--bg-color);
     /* direction: rtl;
