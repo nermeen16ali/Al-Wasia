@@ -286,10 +286,14 @@
                             يرجى مراجعة الواتس أب لمتابعة عملية تسجيل الدخول</p>
 
                         <div class="otp-container mb-3">
-                            <input type="number" class="otp-input" maxlength="1" placeholder="0" required>
-                            <input type="number" class="otp-input" maxlength="1" placeholder="0" required>
-                            <input type="number" class="otp-input" maxlength="1" placeholder="0" required>
-                            <input type="number" class="otp-input" maxlength="1" placeholder="0" required>
+                            <input type="text" inputmode="numeric" class="otp-input" maxlength="1" placeholder="0"
+                                required>
+                            <input type="text" inputmode="numeric" class="otp-input" maxlength="1" placeholder="0"
+                                required>
+                            <input type="text" inputmode="numeric" class="otp-input" maxlength="1" placeholder="0"
+                                required>
+                            <input type="text" inputmode="numeric" class="otp-input" maxlength="1" placeholder="0"
+                                required>
                         </div>
 
                         <p class="fz-12 grayed-text mb-4">
@@ -463,6 +467,34 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-focus the first input when any modal is shown
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('shown.bs.modal', () => {
+                const firstInput = modal.querySelector('input, select');
+                if (firstInput) {
+                    firstInput.focus();
+                }
+            });
+        });
+
+        // Auto-focus logic for OTP inputs
+        document.querySelectorAll('.otp-container').forEach(container => {
+            const inputs = container.querySelectorAll('input');
+            inputs.forEach((input, index) => {
+                input.addEventListener('input', (e) => {
+                    if (e.target.value.length === 1) {
+                        if (index < inputs.length - 1) inputs[index + 1].focus();
+                    }
+                });
+                input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Backspace' && !e.target.value) {
+                        if (index > 0) inputs[index - 1].focus();
+                    }
+                });
+            });
+        });
+    </script>
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
