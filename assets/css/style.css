@@ -350,15 +350,16 @@ ul {
     display: flex;
     align-items: center;
     gap: 4px;
-    font-size: 14px;
     background-color: #EAECF0;
     border-radius: 18px;
-    padding: 6px;
+    padding: 4px 6px;
     color: #E34D4D;
 }
 
 .log-badge span {
     line-height: 100%;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .header-top {
