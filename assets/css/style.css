@@ -346,6 +346,9 @@ ul {
 }
 
 .log-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     background-color: #EAECF0;
     border-radius: 18px;
     padding: 4px 6px;
