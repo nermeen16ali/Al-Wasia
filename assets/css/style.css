@@ -349,6 +349,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 4px;
+    font-size: 14px;
     background-color: #EAECF0;
     border-radius: 18px;
     padding: 4px 6px;
