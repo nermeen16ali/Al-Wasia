@@ -34,6 +34,39 @@ p {
     box-sizing: border-box;
 }
 
+/* Bootstrap Icons Fix for Mobile & RTL */
+.bi,
+[class^="bi-"],
+[class*=" bi-"] {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+/* Ensure icons are centered in flex containers */
+.d-flex .bi,
+.d-flex [class^="bi-"],
+.d-flex [class*=" bi-"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix for RTL icon positioning */
+[dir="rtl"] .bi,
+[dir="rtl"] [class^="bi-"],
+[dir="rtl"] [class*=" bi-"] {
+    direction: ltr;
+    unicode-bidi: embed;
+}
+
+
 body {
     font-family: var(--font-family-sans);
     font-size: var(--font-size-base);
