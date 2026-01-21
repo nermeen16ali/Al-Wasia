@@ -154,7 +154,14 @@
     <script>
         function goToStep(stepId) {
             document.querySelectorAll('.auth-card').forEach(card => card.classList.remove('active'));
-            document.getElementById(stepId).classList.add('active');
+            const activeStep = document.getElementById(stepId);
+            activeStep.classList.add('active');
+
+            // Focus the first input in the active step
+            const firstInput = activeStep.querySelector('input');
+            if (firstInput) {
+                firstInput.focus();
+            }
         }
 
         // Auto-focus logic for OTP/PIN inputs
