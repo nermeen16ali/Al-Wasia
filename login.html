@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Intl Tel Input CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/css/intlTelInput.css">
 </head>
 
 <body class="bg-gredient p-0">
@@ -49,10 +51,8 @@
 
                 <div class="mb-4">
                     <label class="form-label">رقم الهاتف</label>
-                    <div class="input-group">
-                        <span class="input-group-text">02 <i class="bi bi-chevron-down ms-1"
-                                style="font-size: 0.8rem;"></i></span>
-                        <input type="tel" class="form-control text-end" placeholder="01149722784" required>
+                    <div class="input-group" dir="ltr">
+                        <input type="tel" class="form-control" id="phone" placeholder="01149722784" required>
                     </div>
                     <div class="fz-10 mt-1 grayed-text">
                         رقم الهاتف (الواتس أب ) أساسي لإشعارات الحياة
@@ -173,6 +173,19 @@
                 });
             });
         });
+    </script>
+    <!-- Intl Tel Input JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.6.0/build/js/intlTelInput.min.js"></script>
+    <script>
+        const input = document.querySelector("#phone");
+        if (input) {
+            window.intlTelInput(input, {
+                initialCountry: "eg",
+                separateDialCode: true,
+                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+                searchPlaceholder: "Search Country",
+            });
+        }
     </script>
 </body>
 

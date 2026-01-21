@@ -1298,7 +1298,7 @@ textarea.form-control {
 }
 
 .input-group-text {
-    background: #F8FAFC;
+    background: transparent;
     border: 1px solid #E2E8F0;
     border-radius: 12px;
     min-width: 51px;
@@ -1340,18 +1340,29 @@ textarea.form-control {
     transform: translateX(-50%);
 }
 
-/* .resend-link {
-    color: #0FBC91;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 0.9rem;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
+.iti {
+    width: 100%;
 }
 
-.resend-link:hover {
-    border-bottom-color: #0FBC91;
-} */
+.iti__search-input {
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+}
+
+[dir=rtl] .iti__arrow {
+    margin-right: 0 !important;
+    margin-left: 6px !important;
+}
+
+.iti__selected-country-primary {
+    border-left: 1px solid #E2E8F0;
+}
+
+/* Fix for RTL */
+.iti__country-list {
+    text-align: left;
+    direction: ltr;
+}
 
 /* Flatpickr Customization */
 .flatpickr-calendar {
